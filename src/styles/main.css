@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 175%;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 125%;
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.section.content {
+  margin: 0 2rem;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  animation: 0.6s 0.1s 1 normal ease-out titleShow forwards;
+}
+
+@keyframes titleShow {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
