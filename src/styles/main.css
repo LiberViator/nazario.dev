@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,45 +21,51 @@ body {
 
 @layer base {
   h1 {
-    @apply text-h1;
+    @apply text-[3.25rem];
+    @apply font-bold;
+    @apply leading-[125%];
   }
+
   h2 {
-    @apply text-h2;
+    @apply text-[1.5rem];
+    /* @apply md:text-[1.75rem]; */
+    @apply font-normal;
+    @apply leading-[175%];
   }
-}
 
-h1 {
-  /* @apply text-[3rem];
-    @apply md:text-[3.5rem]; */
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 125%;
-}
+  h3 {
+    @apply text-[1.5rem];
+    @apply font-normal;
+    @apply leading-[125%];
+  }
 
-h2 {
-  /* @apply text-[1.5rem];
-    @apply md:text-[1.75rem]; */
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 175%;
-}
+  h4 {
+    @apply text-[1.125rem];
+    @apply font-normal;
+    @apply leading-[125%];
+  }
 
-h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 125%;
-}
+  h5 {
+    @apply text-[1.125rem];
+    @apply font-normal;
+    @apply leading-[125%];
+  }
 
-h4 {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 125%;
-}
+  p {
+    @apply text-[1.125rem];
+    @apply font-normal;
+    @apply leading-[175%];
+  }
 
-p {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 150%;
+  button {
+    @apply text-[1.125rem];
+    @apply font-normal;
+    @apply leading-[125%];
+  }
+
+  a {
+    @apply hover:text-alternative;
+  }
 }
 
 .section {

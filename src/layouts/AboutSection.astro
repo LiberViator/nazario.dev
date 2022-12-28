@@ -1,0 +1,44 @@
+---
+import Title from "../components/Title.astro";
+
+const { toolList } = Astro.props;
+---
+
+<section
+  class="flex justify-center w-full px-6 py-12 md:px-12 md:py-16 bg-main"
+>
+  <div class="flex flex-col items-center w-full max-w-6xl">
+    <Title text="O Mnie" />
+    <div
+      class="grid justify-center w-full grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-x-8 gap-y-12"
+    >
+      <div
+        class="flex order-2 w-full max-w-2xl col-start-1 bg-secondary col-span-full rounded-xl aspect-video md:col-span-6 lg:col-span-5 lg:order-none"
+      >
+      </div>
+      <div
+        class="flex flex-col w-full col-start-1 col-span-full md:col-start-1 lg:col-start-7 md:col-span-8 lg:col-span-6"
+      >
+        <p class="hide mb-8">
+          Cześć, jestem Nazar! Od dziecka interesuje mnie projektowanie witryn
+          internetowych. Skończyłem studia na kierunku Grafika reklamowa i
+          Multimedia, by wypróbować swe umiejętności na praktyce. A po
+          zakończeniu zacząłem uczyć się programowania, by zrozumieć, jak
+          realizować strony w życiu.
+        </p>
+        <div>
+          <h5 class="mb-6 text-[#777777]">Tools I use:</h5>
+          <ul class="flex flex-row gap-8">
+            {
+              toolList?.map((_tool) => (
+                <a href={_tool.href} class="w-8 h-8 rounded-2xl bg-secondary">
+                  <img src={_tool.image} alt={_tool.name} />
+                </a>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

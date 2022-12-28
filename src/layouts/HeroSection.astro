@@ -1,0 +1,76 @@
+---
+const { langList, navLinks, socialLinks } = Astro.props;
+---
+
+<section
+  class="relative flex justify-center w-full px-6 overflow-hidden bg-white md:px-12"
+>
+  <div
+    class="grid w-full max-w-6xl min-h-[512px] h-[calc(100vh-32px)] max-h-[1024px] gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+  >
+    <div
+      class="relative flex w-full h-full justify-center lg:justify-end items-end row-start-1 row-end-1 !col-start-1 col-span-2 md:col-span-4 lg:col-span-3"
+    >
+      <img
+        src="/portrait.png"
+        alt=""
+        class="absolute min-w-[960px] h-full max-h-[840px] object-contain object-[80%] md:object-[96%] lg:object-right-bottom opacity-20 lg:opacity-100 drop-shadow-custom"
+      />
+    </div>
+    <div
+      class="flex w-full h-full flex-col z-[1] row-start-1 row-end-1 col-span-2 col-start-1 md:col-start-1 lg:col-start-4 md:col-span-4 lg:col-span-3"
+    >
+      <header class="flex flex-row justify-end w-full pt-8 pb-4 md:pt-12">
+        <select value="eng" id="langInput" name="language">
+          {
+            langList?.map((_lang) => (
+              <option selected="{_lang.isDefault}" value="{_lang.value}">
+                {_lang.name}
+              </option>
+            ))
+          }
+        </select>
+      </header>
+      <div class="flex items-center w-full h-full">
+        <div class="hide flex flex-col gap-16 my-8">
+          <div class="flex flex-col gap-x-8 grid-cols-3">
+            <h1 class="mb-6 md:mb-8 col-span-3">Hej, jestem Nazar</h1>
+            <h2 class="col-span-2">
+              Zaprojektuję witrynę na potrzeby twoich klientów
+            </h2>
+          </div>
+          <button
+            class="flex items-center justify-center w-64 h-12 hover:scale-105 rounded-xl bg-accent text-main"
+            >Kontaktuj</button
+          >
+        </div>
+      </div>
+      <footer
+        class="flex flex-row items-end justify-between w-full pt-4 pb-8 md:pb-12"
+      >
+        <div class="flex flex-col">
+          <h5 class="text-[#777777] mb-4">Nawiguj do:</h5>
+          <nav class="flex flex-row gap-8">
+            {
+              navLinks?.map((_item) => (
+                <a href={_item.href} class="">
+                  <h5>{_item.name}</h5>
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+
+        <div class="flex flex-row gap-8 shrink-0">
+          {
+            socialLinks?.map((_item) => (
+              <a href={_item.href}>
+                <img src={_item.image} alt="" />
+              </a>
+            ))
+          }
+        </div>
+      </footer>
+    </div>
+  </div>
+</section>

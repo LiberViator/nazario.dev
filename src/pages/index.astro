@@ -1,19 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Title from "../components/Title.astro";
+import HeroSection from "../layouts/HeroSection.astro";
+import AboutSection from "../layouts/AboutSection.astro";
+import WorkSection from "../layouts/WorkSection.astro";
+import ProsSection from "../layouts/ProsSection.astro";
+import ContactSection from "../layouts/ContactSection.astro";
 
 // const userLang = document.querySelector("#langInput");
 const langList = [
   { value: "eng", name: "English", isDefault: true },
   { value: "pol", name: "Polish", isDefault: false },
 ];
-
 const navLinks = [
   { name: "O Mnie", href: "#about" },
   { name: "Pracy", href: "#work" },
   { name: "Kontakt", href: "#contact" },
 ];
-
 const socialLinks = [
   // {
   //   name: "GitHub",
@@ -26,181 +28,40 @@ const socialLinks = [
   //   image: "/linkedin.svg",
   // },
 ];
-
 const toolList = [
   { name: "", href: "", image: "" },
   { name: "", href: "", image: "" },
   { name: "", href: "", image: "" },
 ];
-
 const workList = [
   { name: "Project 1" },
   { name: "Project 2" },
   { name: "Project 3" },
 ];
+const prosList = [
+  {
+    title: "Strony WWW przyjazne SEO",
+    desc: "Dla lepszego wyszukiwania w przeglądarce",
+    image: "",
+  },
+  { title: "Szybkie ładowanie", desc: "Nawet w słabym zasięgu", image: "" },
+  { title: "Unikalny design", desc: "Bez wykorzystania szablonów", image: "" },
+  {
+    title: "Wsparcie klientów",
+    desc: "Do 6 miesięcy po wykonanej pracy",
+    image: "",
+  },
+];
 ---
 
 <Layout>
-  <section
-    class="relative flex justify-center w-full px-6 overflow-hidden bg-white md:px-12"
-  >
-    <div
-      class="grid w-full max-w-6xl min-h-[512px] h-[calc(100vh-32px)] max-h-[1024px] gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
-    >
-      <div
-        class="relative flex w-full h-full justify-center lg:justify-end items-end row-start-1 row-end-1 !col-start-1 col-span-2 md:col-span-4 lg:col-span-3"
-      >
-        <img
-          src="/portrait.png"
-          alt=""
-          class="absolute min-w-[960px] h-full max-h-[840px] object-contain object-[80%] md:object-[96%] lg:object-right-bottom opacity-20 lg:opacity-100 drop-shadow-custom"
-        />
-      </div>
-      <div
-        class="flex w-full h-full flex-col z-[1] row-start-1 row-end-1 col-span-2 col-start-1 md:col-start-1 lg:col-start-4 md:col-span-4 lg:col-span-3"
-      >
-        <header class="flex flex-row justify-end w-full pt-8 pb-4 md:pt-12">
-          <select value="eng" id="langInput" name="language">
-            {
-              langList.map((_lang) => (
-                <option selected="{_lang.isDefault}" value="{_lang.value}">
-                  {_lang.name}
-                </option>
-              ))
-            }
-          </select>
-        </header>
-        <div class="flex items-center w-full h-full">
-          <div class="hide flex flex-col gap-16 my-8">
-            <div class="flex flex-col gap-x-8 grid-cols-3">
-              <h1 class="mb-6 md:mb-8 col-span-3">Hej, jestem Nazar</h1>
-              <h2 class="col-span-2">
-                Zaprojektuję witrynę na potrzeby twoich klientów
-              </h2>
-            </div>
-            <button
-              class="flex items-center justify-center w-64 h-12 text-[18px] hover:scale-105 rounded-xl bg-accent text-main"
-            >
-              Kontaktuj
-            </button>
-          </div>
-        </div>
-        <footer
-          class="flex flex-row items-end justify-between w-full pt-4 pb-8 md:pb-12"
-        >
-          <div class="flex flex-col">
-            <h4 class="text-h4 text-[#777777] mb-4">Nawiguj do:</h4>
-            <nav class="flex flex-row gap-8">
-              {
-                navLinks?.map((_item) => (
-                  <a href={_item.href} class="text-h4 hover:text-alternative">
-                    {_item.name}
-                  </a>
-                ))
-              }
-            </nav>
-          </div>
-
-          <div class="flex flex-row gap-8 shrink-0">
-            {
-              socialLinks?.map((_item) => (
-                <a href={_item.href}>
-                  <img src={_item.image} alt="" />
-                </a>
-              ))
-            }
-          </div>
-        </footer>
-      </div>
-    </div>
-  </section>
-  <section
-    class="flex justify-center w-full px-6 py-12 md:px-12 md:py-16 bg-main"
-  >
-    <div class="flex flex-col items-center w-full max-w-6xl">
-      <Title text="O Mnie" />
-      <div
-        class="grid justify-center w-full grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-x-8 gap-y-12"
-      >
-        <div
-          class="flex order-2 w-full max-w-2xl col-start-1 bg-secondary col-span-full rounded-xl aspect-video md:col-span-6 lg:col-span-5 lg:order-none"
-        >
-        </div>
-        <div
-          class="flex flex-col w-full col-start-1 col-span-full md:col-start-1 lg:col-start-7 md:col-span-8 lg:col-span-6"
-        >
-          <p class="hide mb-8">
-            Cześć, jestem Nazar! Od dziecka interesuje mnie projektowanie witryn
-            internetowych. Skończyłem studia na kierunku Grafika reklamowa i
-            Multimedia, by wypróbować swe umiejętności na praktyce. A po
-            zakończeniu zacząłem uczyć się programowania, by zrozumieć, jak
-            realizować strony w życiu.
-          </p>
-          <div>
-            <h4 class="mb-6 text-[#777777]">Tools I use:</h4>
-            <ul class="flex flex-row gap-8">
-              {
-                toolList.map((_tool) => (
-                  <a href={_tool.href} class="w-8 h-8 rounded-2xl bg-secondary">
-                    <img src={_tool.image} alt={_tool.name} />
-                  </a>
-                ))
-              }
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    class="flex flex-col items-center w-full px-6 py-12 bg-white md:px-12 md:py-16"
-  >
-    <div class="flex flex-col items-center w-full max-w-6xl gap-x-8">
-      <Title text="Pracy" />
-      <div
-        class="grid w-full grid-cols-1 gap-12 md:gap-8 md:grid-cols-2 lg:grid-cols-3"
-      >
-        {
-          workList.map((_work) => (
-            <div class="flex flex-col col-span-1 ">
-              <div class="bg-secondary aspect-[4/3] w-full rounded-xl mb-6" />
-              <h4 class="">{_work.name}</h4>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-  <section
-    class="flex flex-col items-center w-full px-6 py-12 bg-main md:px-12 md:py-16"
-  >
-    <div class="flex flex-col items-center w-full max-w-6xl">
-      <Title text="Kontakt" />
-      <div
-        class="grid justify-center w-full grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-x-8 gap-y-12"
-      >
-        <form
-          action=""
-          class="col-start-1 aspect-video col-span-full md:col-span-5 lg:col-span-6 rounded-xl bg-secondary"
-        >
-        </form>
-        <ul
-          class="hide flex flex-col self-center col-start-1 gap-6 col-span-full md:col-start-6 lg:col-start-8 md:col-span-4 lg:col-span-5"
-        >
-          <li class="flex flex-row gap-4 text-h4">
-            <img src="/email.svg" alt="" />
-            <a href="">nazar.poplavsky@gmail.com</a>
-          </li>
-          <li class="flex flex-row gap-4 text-h4">
-            <img src="/phone.svg" alt="" />
-            <a href="">+48 698 284 677</a>
-          </li>
-          <li class="flex flex-row gap-4 text-h4">
-            <img src="/location.svg" alt="" />
-            <h4>Cracow, Poland</h4>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    langList={langList}
+    navLinks={navLinks}
+    socialLinks={socialLinks}
+  />
+  <AboutSection toolList={toolList} />
+  <!-- <WorkSection workList={workList} /> -->
+  <ProsSection prosList={prosList} />
+  <ContactSection />
 </Layout>

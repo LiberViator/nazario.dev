@@ -1,4 +1,5 @@
 ---
+import "../styles/main.css";
 ---
 
 <html lang="en">
@@ -9,7 +10,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit='no'"
     />
-    <link rel="stylesheet" href="src/styles/main.css" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
@@ -17,4 +17,5 @@
     <slot />
     <script src="../scripts/scrollAnim.js"></script>
   </body>
+  <style is:global></style>
 </html>
