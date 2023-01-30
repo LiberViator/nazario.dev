@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_793_210)">
+<rect width="128" height="128" rx="12" fill="url(#paint0_radial_793_210)"/>
+<path d="M0 16H88C92.4183 16 96 19.5817 96 24V128H0V16Z" fill="#111827"/>
+<path d="M0 48L-3.49691e-07 40L78 40C79.1046 40 80 40.8954 80 42L80 46C80 47.1046 79.1046 48 78 48L0 48Z" fill="#FEF08A"/>
+<path d="M0 100L-3.49691e-07 92L78 92C79.1046 92 80 92.8954 80 94L80 98C80 99.1046 79.1046 100 78 100L0 100Z" fill="#334155"/>
+<path d="M0 16L88 16C92.4183 16 96 19.5817 96 24V28L0 28L0 16Z" fill="#475569"/>
+<rect x="84" y="20" width="4" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="20" width="4" height="4" rx="2" fill="#334155"/>
+<rect x="68" y="20" width="4" height="4" rx="2" fill="#334155"/>
+<path d="M0 80L-1.04907e-06 56L78 56C79.1046 56 80 56.8954 80 58L80 78C80 79.1046 79.1046 80 78 80L0 80Z" fill="#FEF08A"/>
+<path d="M0 128L-8.74228e-07 108L78 108C79.1046 108 80 108.895 80 110L80 128L0 128Z" fill="#334155"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_793_210" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 128) rotate(-90) scale(64)">
+<stop stop-color="#475569"/>
+<stop offset="1" stop-color="#475569" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_793_210">
+<rect width="128" height="128" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

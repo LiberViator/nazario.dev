@@ -1,0 +1,71 @@
+---
+const { navLinks, socialLinks } = Astro.props;
+---
+
+<section
+  class="bg-hero-gradient relative flex justify-center herosec w-full paddings overflow-hidden bg-slate-800"
+>
+  <div
+    class="grid w-full max-w-6xl gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+  >
+    <div
+      class="relative flex w-full h-full justify-center lg:justify-end items-end row-start-1 row-end-1 !col-start-1 col-span-2 md:col-span-4 lg:col-span-3"
+    >
+      <img
+        src="/portrait.png"
+        alt=""
+        class="absolute min-w-[1080px] h-full max-h-[840px] object-contain object-[calc(64%+20vw)] lg:object-right-bottom opacity-10 lg:opacity-100 drop-shadow-custom"
+      />
+    </div>
+    <div
+      class="flex w-full h-full flex-col z-[1] row-start-1 row-end-1 col-span-2 col-start-1 md:col-start-1 lg:col-start-4 md:col-span-4 lg:col-span-3"
+    >
+      <header class="flex flex-row w-full pt-8 pb-4">
+        <div class="flex flex-col">
+          <h5 class="text-slate-500 mb-3 hidden md:block">Nawiguj do</h5>
+          <nav class="flex flex-row gap-8 text-slate-400">
+            {
+              navLinks?.map((_item) => (
+                <a href={_item.href} class="">
+                  <h5>{_item.name}</h5>
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </header>
+      <div class="flex items-center w-full max-w-[560px] h-full">
+        <div class="hide flex flex-col my-16">
+          <div class="flex flex-col gap-x-8 grid-cols-3">
+            <h1 class="mb-4 col-span-3">Hej, jestem Nazar</h1>
+            <h2 class="col-span-2 mb-8">
+              Zaprojektuję witrynę na potrzeby twoich klientów
+            </h2>
+            <a href={""} class="flex mb-12">
+              <img src="/arrow.svg" alt="" class="mr-4" />
+              <h5 class="">Zobacz film o mnie</h5>
+            </a>
+          </div>
+          <button
+            class="flex items-center justify-center w-64 h-12 hover:scale-105 rounded-xl bg-yellow-300 text-main"
+            >Deleguj!</button
+          >
+        </div>
+      </div>
+      <footer class="flex flex-row items-end justify-end w-full pt-4 pb-8">
+        <div class="flex flex-col justify-end">
+          <h5 class="text-slate-500 mb-3 hidden md:block">Znajdź mnie na</h5>
+          <div class="flex flex-row gap-8 shrink-0 justify-end">
+            {
+              socialLinks?.map((_item) => (
+                <a href={_item.href}>
+                  <img src={_item.image} alt="" />
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</section>

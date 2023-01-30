@@ -1,0 +1,15 @@
+---
+const { title, desc, image } = Astro.props;
+---
+
+<li
+  class="flex flex-col w-[calc(100vw-48px)] md:w-[560px] col-span-1 snap-start snap-always"
+>
+  <div
+    class="bg-slate-700 w-16 h-16 rounded-xl mb-6 flex justify-center items-center"
+  >
+    <img src={image} alt="" />
+  </div>
+  <h4 class="mb-4">{title}</h4>
+  <p class="text-slate-400">{desc}</p>
+</li>

@@ -1,0 +1,33 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_793_159)">
+<rect width="128" height="128" rx="12" fill="url(#paint0_radial_793_159)"/>
+<circle cx="48" cy="80" r="64" fill="#111827"/>
+<circle cx="48" cy="80" r="56" fill="#475569"/>
+<rect x="86" y="82" width="4" height="12" rx="2" transform="rotate(-90 86 82)" fill="#334155"/>
+<rect x="46" y="30" width="4" height="12" rx="2" fill="#334155"/>
+<rect x="-2" y="82" width="4" height="12" rx="2" transform="rotate(-90 -2 82)" fill="#334155"/>
+<rect x="46" y="118" width="4" height="12" rx="2" fill="#334155"/>
+<rect x="79.1128" y="51.7158" width="4" height="8" rx="2" transform="rotate(-135 79.1128 51.7158)" fill="#334155"/>
+<rect x="11.2305" y="46.0588" width="4" height="8" rx="2" transform="rotate(-45 11.2305 46.0588)" fill="#334155"/>
+<rect x="14.0588" y="116.77" width="4" height="8" rx="2" transform="rotate(-135 14.0588 116.77)" fill="#334155"/>
+<rect x="76.2842" y="111.113" width="4" height="8" rx="2" transform="rotate(-45 76.2842 111.113)" fill="#334155"/>
+<path d="M93.0333 106C97.5973 98.095 100 89.1279 100 80C100 70.8721 97.5973 61.905 93.0333 54C88.4694 46.095 81.905 39.5306 74 34.9667C66.095 30.4027 57.1279 28 48 28L48 80L93.0333 106Z" fill="url(#paint1_linear_793_159)"/>
+<path d="M45.0001 85.1963L48.0001 80.0001L51.0001 74.804L92.5053 103.222C93.3676 103.812 93.6299 104.967 93.1074 105.872L92.9595 106.128C92.4369 107.033 91.3057 107.383 90.3632 106.932L45.0001 85.1963Z" fill="#111827"/>
+<circle cx="48" cy="80" r="6" fill="#111827"/>
+<path d="M87.2425 23.4142C88.0236 22.6332 89.2899 22.6332 90.071 23.4142L104.213 37.5563C104.994 38.3374 104.994 39.6037 104.213 40.3848L99.9704 44.6274L82.9999 27.6569L87.2425 23.4142Z" fill="#111827"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_793_159" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 128) rotate(-90) scale(64)">
+<stop stop-color="#475569"/>
+<stop offset="1" stop-color="#475569" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_793_159" x1="48" y1="28" x2="93" y2="106" gradientUnits="userSpaceOnUse">
+<stop stop-color="#475569" stop-opacity="0"/>
+<stop offset="0.449828" stop-color="#475569" stop-opacity="0"/>
+<stop offset="1" stop-color="#FEF08A"/>
+</linearGradient>
+<clipPath id="clip0_793_159">
+<rect width="128" height="128" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

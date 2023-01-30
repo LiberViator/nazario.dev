@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HeroSection from "../layouts/HeroSection.astro";
-import AboutSection from "../layouts/AboutSection.astro";
-import WorkSection from "../layouts/WorkSection.astro";
-import ProsSection from "../layouts/ProsSection.astro";
-import ContactSection from "../layouts/ContactSection.astro";
+import HeroSec from "../layouts/HeroSec.astro";
+import AboutSec from "../layouts/AboutSec.astro";
+import WorkSec from "../layouts/WorkSec.astro";
+import StepsSec from "../layouts/StepsSec.astro";
+import ProsSec from "../layouts/ProsSec.astro";
+import ContactSec from "../layouts/ContactSec.astro";
 
 // const userLang = document.querySelector("#langInput");
 const langList = [
@@ -12,21 +13,21 @@ const langList = [
   { value: "pol", name: "Polish", isDefault: false },
 ];
 const navLinks = [
-  { name: "O Mnie", href: "#about" },
-  { name: "Pracy", href: "#work" },
+  { name: "Etapy", href: "#about" },
+  { name: "Zalety", href: "#work" },
   { name: "Kontakt", href: "#contact" },
 ];
 const socialLinks = [
-  // {
-  //   name: "GitHub",
-  //   href: "https://github.com/LiberViator",
-  //   image: "/github.svg",
-  // },
-  // {
-  //   name: "LinkedIn",
-  //   href: "https://www.linkedin.com/in/poplawski/",
-  //   image: "/linkedin.svg",
-  // },
+  {
+    name: "Facebook",
+    href: "https://github.com/LiberViator",
+    image: "/facebook.svg",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/poplawski/",
+    image: "/linkedin.svg",
+  },
 ];
 const toolList = [
   { name: "", href: "", image: "" },
@@ -40,28 +41,60 @@ const workList = [
 ];
 const prosList = [
   {
-    title: "Strony WWW przyjazne SEO",
+    title: "Strony przyjazne SEO",
     desc: "Dla lepszego wyszukiwania w przeglądarce",
-    image: "",
+    image: "/pros/seo.svg",
   },
-  { title: "Szybkie ładowanie", desc: "Nawet w słabym zasięgu", image: "" },
-  { title: "Unikalny design", desc: "Bez wykorzystania szablonów", image: "" },
+  {
+    title: "Szybkie ładowanie witryn",
+    desc: "Nawet w słabym zasięgu",
+    image: "/pros/speed.svg",
+  },
+  {
+    title: "Projektowanie responsywne",
+    desc: "Dla dostępności na urządzeniach mobilnych",
+    image: "/pros/responsive.svg",
+  },
   {
     title: "Wsparcie klientów",
-    desc: "Do 6 miesięcy po wykonanej pracy",
+    desc: "Do 6 miesięcy po publikacji",
     image: "",
+  },
+];
+const stepsList = [
+  {
+    title: "Znajomość",
+    desc: "Poznaję Cię i Twoją działalność. Zbieram materiały potrzebne do pracy (teksty, zdjęcia). Ustalasz cele dla witryny, które chcesz osiągnąć.",
+    image: "/steps/mug.svg",
+  },
+  {
+    title: "Projektowanie",
+    desc: "Tworzę tzw. szkielet witryny. Względne obrysy komponentów znajdują swoje miejsce na stronie.",
+    image: "/steps/puzzle.svg",
+  },
+  {
+    title: "Design",
+    desc: "Strona nabiera kolorów, pojawia się rzeczywisty tekst, zaplanowane zdjęcia. Witryna staje się żywsza za pomocą animacji.",
+    image: "/steps/palette.svg",
+  },
+  {
+    title: "Programowanie",
+    desc: "Wizualną część przenoszę w postać kodu. Pojawia się funkcjonał. Witrynę można wypróbować w przeglądarce własnego komputera lub telefonu.",
+    image: "/steps/code.svg",
+  },
+  {
+    title: "Publikacja",
+    desc: "Dobieramy odpowiednią domenę. Puszczamy stronę online, by cieszyła twoich klientów.",
+    image: "/steps/monitor.svg",
   },
 ];
 ---
 
 <Layout>
-  <HeroSection
-    langList={langList}
-    navLinks={navLinks}
-    socialLinks={socialLinks}
-  />
-  <AboutSection toolList={toolList} />
-  <!-- <WorkSection workList={workList} /> -->
-  <ProsSection prosList={prosList} />
-  <ContactSection />
+  <HeroSec navLinks={navLinks} socialLinks={socialLinks} />
+  <!-- <AboutSec toolList={toolList} /> -->
+  <!-- <WorkSec workList={workList} /> -->
+  <StepsSec stepsList={stepsList} />
+  <ProsSec prosList={prosList} />
+  <ContactSec />
 </Layout>

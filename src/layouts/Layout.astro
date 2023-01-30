@@ -8,14 +8,14 @@ import "../styles/main.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit='no'"
+      content="width=device-width, initial-scale=1, shrink-to-fit='no', viewport-fit=cover"
     />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
   <body>
     <slot />
-    <script src="../scripts/scrollAnim.js"></script>
+    <script client:only src="scripts/scrollAnim.js"></script>
   </body>
   <style is:global></style>
 </html>
