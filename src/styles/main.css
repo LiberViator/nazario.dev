@@ -76,20 +76,27 @@
   a {
     @apply hover:text-rose-600;
   }
+  
+
   .paddings {
     @apply px-6;
     @apply md:px-12;
   }
 
-  .border-shine {
-    /* border: solid 1px; */
-    /* outline: 1px solid linear-gradient(45deg, #475569, #33415500); */
-    /* border-image-source: linear-gradient(45deg, #475569, #33415500); */
-    /* background: linear-gradient(#475569, #475569) padding-box,
-      linear-gradient(to right, #475569, rgba(51, 65, 85, 0)) border-box;
-    border-radius: 50em;
-    border: 1px solid transparent; */
-    /* outline: 3px linear-gradient(45deg, #475569, #334155); */
+  .border-shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, #475569 0%, #33415500 48%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
   }
 }
 

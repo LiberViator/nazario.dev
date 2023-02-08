@@ -9,17 +9,17 @@ const { stepsList } = Astro.props;
   id="steps"
   x-data="{ currentStep: 0, stepCardWidth: $refs.stepCard.offsetWidth }"
   x-on:resize.window.debounce="() => stepCardWidth = $refs.stepCard.offsetWidth"
-  class="flex flex-col items-center w-full py-12 bg-slate-900 md:py-16"
+  class="flex w-full flex-col items-center bg-slate-900 py-12 md:py-16"
 >
-  <div class="flex flex-col items-center w-full gap-x-8">
+  <div class="flex w-full flex-col items-center gap-x-8">
     <Title text="Etapy Działania" />
     <div
       id="slider"
       x-on:scroll.debounce.50ms="currentStep = Math.round($el.scrollLeft / stepCardWidth)"
       x-effect="$el.scroll({left: currentStep * stepCardWidth, behavior: 'smooth'})"
-      class="w-full items-start mb-8 paddings lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))] snap-x snap-mandatory overflow-x-scroll overscroll-x-contain scroll-px-6 md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
+      class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
     >
-      <ul class="grid grid-flow-col w-max gap-4 md:gap-8">
+      <ul class="grid w-max grid-flow-col gap-4 md:gap-8">
         {
           stepsList?.map((_step) => (
             <StepCard
@@ -31,12 +31,12 @@ const { stepsList } = Astro.props;
         }
       </ul>
     </div>
-    <div class="flex flex-row gap-6 items-center">
+    <div class="flex flex-row items-center gap-6">
       <button x-on:click="currentStep > 0 ? currentStep-- : undefined">
         <img src="/arrow.svg" alt="" class="rotate-180" />
       </button>
       <h5
-        class="text-slate-600 w-12 text-center"
+        class="w-12 text-center text-slate-600"
         x-text=`currentStep + 1 +"${" z " + stepsList.length}"`
       >
       </h5>

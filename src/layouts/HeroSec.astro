@@ -1,42 +1,42 @@
 ---
 const { navLinks, socialLinks } = Astro.props;
-import NavLink from "../components/NavLinkComp.astro";
+import NavLink from "../components/Nav.astro";
 ---
 
 <section
-  class="bg-hero-gradient relative flex justify-center herosec w-full paddings overflow-hidden bg-slate-800"
+  class="herosec paddings relative flex w-full justify-center overflow-hidden bg-slate-800 bg-hero-gradient"
 >
   <div
-    class="grid w-full max-w-6xl gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+    class="grid w-full max-w-6xl grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6"
   >
     <div
-      class="relative flex w-full h-full justify-center lg:justify-end items-end row-start-1 row-end-1 !col-start-1 col-span-2 md:col-span-4 lg:col-span-3"
+      class="relative col-span-2 !col-start-1 row-start-1 row-end-1 flex h-full w-full items-end justify-center md:col-span-4 lg:col-span-3 lg:justify-end"
     >
       <img
         src="/portrait.png"
         alt=""
-        class="absolute min-w-[1080px] h-full max-h-[840px] object-contain object-[calc(64%+20vw)] lg:object-right-bottom opacity-10 lg:opacity-100 drop-shadow-custom"
+        class="absolute h-full max-h-[840px] min-w-[1080px] object-contain object-[calc(64%+20vw)] opacity-10 drop-shadow-custom lg:object-right-bottom lg:opacity-100"
       />
     </div>
     <div
-      class="flex w-full h-full flex-col z-[1] row-start-1 row-end-1 col-span-2 col-start-1 md:col-start-1 lg:col-start-4 md:col-span-4 lg:col-span-3"
+      class="z-[1] col-span-2 col-start-1 row-start-1 row-end-1 flex h-full w-full flex-col md:col-span-4 md:col-start-1 lg:col-span-3 lg:col-start-4"
     >
-      <header class="flex flex-row w-full pt-8 pb-4">
+      <header class="flex w-full flex-row pt-8 pb-4">
         <div class="flex flex-col">
-          <h5 class="text-slate-500 mb-3 hidden md:block">Nawiguj do</h5>
+          <h5 class="mb-3 hidden text-slate-500 md:block">Nawiguj do</h5>
           <nav class="flex flex-row gap-8 text-slate-400">
             {navLinks?.map((_item) => <NavLink is:inline link={_item} />)}
           </nav>
         </div>
       </header>
-      <div class="flex items-center w-full max-w-[560px] h-full">
-        <div class="flex flex-col my-16 opacity-0 animate-heading">
-          <div class="flex flex-col gap-x-8 grid-cols-3">
-            <h1 class="mb-4 col-span-3">Hej, jestem Nazar</h1>
+      <div class="flex h-full w-full max-w-[560px] items-center">
+        <div class="my-16 flex animate-heading flex-col opacity-0">
+          <div class="flex grid-cols-3 flex-col gap-x-8">
+            <h1 class="col-span-3 mb-4">Hej, jestem Nazar</h1>
             <h2 class="col-span-2 mb-8">
               Zaprojektuję witrynę na potrzeby twoich klientów
             </h2>
-            <a href={""} class="flex mb-12">
+            <a href={""} class="mb-12 flex">
               <img src="/arrow.svg" alt="" class="mr-4" />
               <h5 class="">Zobacz film o mnie</h5>
             </a>
@@ -44,15 +44,15 @@ import NavLink from "../components/NavLinkComp.astro";
           <button
             class="cta_button w-64"
             x-data
-            x-on:click.prevent="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+            x-on:click.prevent="document.getElementById(contact).scrollIntoView({behavior:'smooth'})"
             >Deleguj!</button
           >
         </div>
       </div>
-      <footer class="flex flex-row items-end justify-end w-full pt-4 pb-8">
+      <footer class="flex w-full flex-row items-end justify-end pt-4 pb-8">
         <div class="flex flex-col justify-end">
-          <h5 class="text-slate-500 mb-3 hidden md:block">Znajdź mnie na</h5>
-          <div class="flex flex-row gap-8 shrink-0 justify-end">
+          <h5 class="mb-3 hidden text-slate-500 md:block">Znajdź mnie na</h5>
+          <div class="flex shrink-0 flex-row justify-end gap-8">
             {
               socialLinks?.map((_item) => (
                 <a href={_item.href}>

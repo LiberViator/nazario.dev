@@ -4,10 +4,10 @@ const { title, desc, image } = Astro.props;
 
 <li
   x-ref="stepCard"
-  class="flex flex-col w-[calc(100vw-48px)] md:w-[560px] col-span-1 snap-start last:snap-end snap-always"
+  class="col-span-1 flex w-[calc(100vw-48px)] snap-start snap-always flex-col last:snap-end md:w-[560px]"
 >
   <div
-    class="bg-slate-700 w-16 h-16 rounded-xl mb-6 flex justify-center items-center"
+    class="border-shine relative mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-slate-700"
   >
     <img src={image} alt="" />
   </div>
