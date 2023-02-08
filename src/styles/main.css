@@ -35,47 +35,42 @@
 
   h1 {
     @apply font-display;
-    @apply text-[3rem];
+    @apply text-h1;
     @apply md:text-[3.5rem];
-    @apply leading-[125%];
   }
 
   h2 {
-    @apply text-[1.5rem];
+    @apply text-h2;
     @apply md:text-[2rem];
-    @apply font-normal;
-    @apply leading-[150%];
   }
 
   h3 {
-    @apply text-[1.375rem];
-    @apply font-normal;
-    @apply leading-[125%];
+    @apply text-h3;
   }
 
   h4 {
-    @apply text-[1.125rem];
-    @apply font-semibold;
-    @apply leading-[125%];
+    @apply text-h4;
   }
 
   h5 {
-    @apply text-[1.125rem];
-    @apply font-normal;
-    @apply leading-[125%];
+    @apply text-h5;
   }
 
   p {
-    @apply text-[1.125rem];
-    @apply font-normal;
-    @apply leading-[160%];
+    @apply text-p;
   }
 
-  button {
+  .cta_button {
+    @apply cursor-pointer;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply h-12;
+    @apply hover:scale-105;
+    @apply rounded-xl;
+    @apply bg-yellow-300;
     @apply text-neutral-900;
-    @apply text-[1.125rem];
-    @apply font-normal;
-    @apply leading-[125%];
+    @apply text-h5;
   }
 
   a {
@@ -108,22 +103,14 @@
   @apply max-h-[1024px];
 }
 
-.hide {
+.slide-anim {
   opacity: 0;
 }
 
-.show {
-  animation: 0.6s 0.1s 1 normal ease-out titleShow forwards;
+/* .slide-anim.play {
+  animation: 0.6s 0.1s 1 normal ease-out titleAnim forwards;
 }
 
-@keyframes titleShow {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+.form-anim.play {
+  animation: 0.6s 0.1s 1 normal ease-out formAnim forwards;
+} */

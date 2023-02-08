@@ -1,5 +1,6 @@
 ---
 const { navLinks, socialLinks } = Astro.props;
+import NavLink from "../components/NavLinkComp.astro";
 ---
 
 <section
@@ -24,18 +25,12 @@ const { navLinks, socialLinks } = Astro.props;
         <div class="flex flex-col">
           <h5 class="text-slate-500 mb-3 hidden md:block">Nawiguj do</h5>
           <nav class="flex flex-row gap-8 text-slate-400">
-            {
-              navLinks?.map((_item) => (
-                <a href={_item.href} class="">
-                  <h5>{_item.name}</h5>
-                </a>
-              ))
-            }
+            {navLinks?.map((_item) => <NavLink is:inline link={_item} />)}
           </nav>
         </div>
       </header>
       <div class="flex items-center w-full max-w-[560px] h-full">
-        <div class="hide flex flex-col my-16">
+        <div class="flex flex-col my-16 opacity-0 animate-heading">
           <div class="flex flex-col gap-x-8 grid-cols-3">
             <h1 class="mb-4 col-span-3">Hej, jestem Nazar</h1>
             <h2 class="col-span-2 mb-8">
@@ -47,7 +42,9 @@ const { navLinks, socialLinks } = Astro.props;
             </a>
           </div>
           <button
-            class="flex items-center justify-center w-64 h-12 hover:scale-105 rounded-xl bg-yellow-300 text-main"
+            class="cta_button w-64"
+            x-data
+            x-on:click.prevent="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
             >Deleguj!</button
           >
         </div>

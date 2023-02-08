@@ -6,16 +6,15 @@ const {} = Astro.props;
 ---
 
 <section
-  class="flex flex-col items-center w-full paddings py-12 bg-slate-900 md:py-16"
+  id="contact"
+  class="bg-contact-gradient flex flex-col items-center sm:paddings w-full pt-12 bg-slate-900 md:pt-16"
 >
   <div class="flex flex-col items-center w-full max-w-6xl">
     <Title text="Kontakt" />
-    <div
-      class="grid justify-center w-full grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-x-8 gap-y-12"
-    >
+    <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-x-8 gap-y-12">
       <Form />
       <ul
-        class="hide flex flex-col self-center col-start-1 gap-8 col-span-full md:col-start-6 lg:col-start-8 md:col-span-4 lg:col-span-5"
+        class="flex w-full flex-col max-sm:paddings lg:pl-[16%] self-center gap-8 lg:pb-16"
       >
         <li class="flex flex-row gap-4">
           <img src="/email.svg" alt="" />

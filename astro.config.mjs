@@ -4,8 +4,10 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
+import alpinejs from "@astrojs/alpinejs";
 
+// https://astro.build/config
 export default defineConfig({
   site: "https://example.com/",
-  integrations: [tailwind()],
+  integrations: [tailwind(), alpinejs()],
 });
