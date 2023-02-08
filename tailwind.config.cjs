@@ -22,12 +22,12 @@ module.exports = {
       },
       keyframes: {
         headingAnim: {
-          "0%": { opacity: 0, transform: "translateX(24px)" },
+          "0%": { transform: "translateX(24px)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
         },
         formAnim: {
           "0%": { transform: "translateY(48px)" },
-          "100%": { transform: "translateX(0)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
         },
       },
       backgroundImage: {
@@ -42,5 +42,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-debug-screens"),
+    require("tailwind-scrollbar-hide"),
+    require("tailwindcss-intersect"),
+  ],
 };

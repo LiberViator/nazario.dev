@@ -12,7 +12,6 @@
   }
 
   html {
-    height: fill-available;
     height: stretch;
     height: -webkit-fill-available;
     height: -moz-available;
@@ -22,7 +21,6 @@
 
   body {
     height: 100vh;
-    height: fill-available;
     height: stretch;
     height: -webkit-fill-available;
     height: -moz-available;
@@ -76,48 +74,39 @@
   a {
     @apply hover:text-rose-600;
   }
-  
 
   .paddings {
     @apply px-6;
+    @apply sm:px-8;
     @apply md:px-12;
   }
 
   .border-shine::after {
-    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    border-radius: inherit;
-    border: 1px solid transparent;
-    background: linear-gradient(135deg, #475569 0%, #33415500 48%) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #475569 0%, #33415500 40%) border-box;
+    content: "";
+  }
+
+  .herosec {
+    @apply min-h-[fit-content];
+    @apply h-[calc(100%-32px)];
+    height: stretch;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    @apply max-h-[1024px];
+  }
+
+  [x-cloak] {
+    display: none !important;
   }
 }
-
-.herosec {
-  @apply min-h-[fit-content];
-  @apply h-[calc(100%-32px)];
-  height: fill-available;
-  height: stretch;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  @apply max-h-[1024px];
-}
-
-.slide-anim {
-  opacity: 0;
-}
-
-/* .slide-anim.play {
-  animation: 0.6s 0.1s 1 normal ease-out titleAnim forwards;
-}
-
-.form-anim.play {
-  animation: 0.6s 0.1s 1 normal ease-out formAnim forwards;
-} */

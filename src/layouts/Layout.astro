@@ -13,8 +13,12 @@ import "../styles/main.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body>
+  <body class="debug-screens">
     <slot />
+    <script
+      defer
+      src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
+    ></script>
     <!-- <script type="module" src="../scripts/scrollAnim.js"></script> -->
   </body>
 </html>

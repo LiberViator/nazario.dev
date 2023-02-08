@@ -17,7 +17,7 @@ const { stepsList } = Astro.props;
       id="slider"
       x-on:scroll.debounce.50ms="currentStep = Math.round($el.scrollLeft / stepCardWidth)"
       x-effect="$el.scroll({left: currentStep * stepCardWidth, behavior: 'smooth'})"
-      class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
+      class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain scrollbar-hide md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
     >
       <ul class="grid w-max grid-flow-col gap-4 md:gap-8">
         {

@@ -7,9 +7,7 @@ import tailwind from "@astrojs/tailwind";
 import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
-
-// https://astro.build/config
 export default defineConfig({
   site: "https://example.com/",
-  integrations: [tailwind(), alpinejs()]
+  integrations: [tailwind(), alpinejs()],
 });
