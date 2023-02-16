@@ -23,7 +23,6 @@
     "prettier-plugin-astro": "^0.7.0",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss-debug-screens": "^2.2.1",
     "tailwindcss-intersect": "^1.0.3"
   }
 }
