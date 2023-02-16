@@ -11,13 +11,12 @@ import NavLink from "../components/Nav.astro";
     <div
       class="relative col-span-1 col-start-1 row-start-1 flex h-full w-full items-end justify-center lg:justify-end"
     >
-      <Image
+      <img
         src="/portrait.webp"
         alt="My portrait photo"
         format="webp"
         width="650"
         height="820"
-        quality="0"
         class="absolute h-full max-h-[840px] min-w-[1080px] object-contain object-[calc(64%+20vw)] opacity-10 drop-shadow-custom lg:object-right-bottom lg:opacity-100"
       />
     </div>
@@ -40,10 +39,10 @@ import NavLink from "../components/Nav.astro";
         >
           <div class="flex grid-cols-3 flex-col gap-x-8">
             <h1 class="col-span-3 mb-4">Hej, jestem Nazar</h1>
-            <h2 class="col-span-2 mb-8">
+            <h2 class="col-span-2 mb-12">
               Zaprojektuję witrynę na potrzeby twoich klientów
             </h2>
-            <a href={""} class="mb-12 flex">
+            <!-- <a href={""} class="mb-12 flex">
               <Image
                 src="/arrow.svg"
                 alt="Play"
@@ -53,12 +52,12 @@ import NavLink from "../components/Nav.astro";
                 height="24"
               />
               <h5 class="">Zobacz film o mnie</h5>
-            </a>
+            </a> -->
           </div>
           <button
             class="cta_button w-64"
             x-data
-            x-on:click.prevent="document.getElementById(contact).scrollIntoView({behavior:'smooth'})"
+            x-on:click.prevent="document.getElementById('user_name').focus()"
             >Deleguj!</button
           >
         </div>

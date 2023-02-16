@@ -19,6 +19,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
       <label for="user_name" class="mb-3 text-h5 text-slate-400">Imię:</label>
       <input
         id="user_name"
+        name="Name"
         type="name"
         minlength="3"
         class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
@@ -31,6 +32,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
       >
       <input
         id="user_number"
+        name="Mobile number"
         type="tel"
         minlength="9"
         class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
@@ -43,9 +45,10 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 
   <input
     id="user_email"
+    name="Email"
     type="email"
     class="mb-4 flex h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
-    placeholder="twój@email.pl"
+    placeholder="mój@gmail.com"
     required
   />
   <label for="user_message" class="mb-3 text-h5 text-slate-400"
@@ -53,8 +56,9 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
   >
   <textarea
     id="user_message"
+    name="Message"
     class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl bg-slate-600 px-6 py-3 text-p placeholder:text-slate-400"
-    placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie. Chciałbym stronę-wizytówkę, która zainspiruje nowych ludzi do skorzystania z moich usług."
+    placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie i potrzebuję witryny, która zachęci nowych klientów do skorzystania z moich usług. Chcę, aby była ona atrakcyjna i zawierała wszystkie niezbędne informacje."
     required></textarea>
   <input type="hidden" name="redirect" value="https://web3forms.com/success" />
   <button type="submit" class="cta_button w-full self-end sm:w-64"
