@@ -17,9 +17,10 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
       <label for="user_name" class="mb-3 text-h5 text-slate-400">Imię:</label>
       <input
         id="user_name"
-        type="email"
+        type="name"
+        minlength="3"
         class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
-        placeholder="twój@email.pl"
+        placeholder="Jan"
         required
       />
     </div>
@@ -28,9 +29,10 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
       >
       <input
         id="user_number"
-        type="email"
+        type="tel"
+        minlength="9"
         class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
-        placeholder="+48 *** *** ***"
+        placeholder="+48 505 050 505"
         required
       />
     </div>
