@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 const { title, desc, image } = Astro.props;
 ---
 
@@ -9,7 +10,7 @@ const { title, desc, image } = Astro.props;
   <div
     class="border-shine relative mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-slate-700"
   >
-    <img src={image} alt="" />
+    <Image src={image} alt="Step icon" format="svg" width="32" height="32" />
   </div>
   <h4 class="mb-4">{title}</h4>
   <p class="text-slate-400">{desc}</p>

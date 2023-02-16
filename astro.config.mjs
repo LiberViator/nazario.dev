@@ -7,7 +7,10 @@ import tailwind from "@astrojs/tailwind";
 import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://nazario.dev/",
-  integrations: [tailwind(), alpinejs()],
+  integrations: [tailwind(), alpinejs(), image()]
 });
