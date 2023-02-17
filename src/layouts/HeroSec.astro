@@ -5,7 +5,7 @@ import NavLink from "../components/Nav.astro";
 ---
 
 <section
-  class="paddings relative flex h-[calc(100svh-32px)] max-h-[1024px] min-h-[fit-content] w-full justify-center overflow-hidden bg-slate-800 bg-hero-gradient"
+  class="paddings relative flex h-[calc(100svh-32px)] max-h-[1024px] min-h-[640px] w-full justify-center overflow-hidden bg-slate-800 bg-hero-gradient"
 >
   <div class="grid w-full max-w-6xl grid-cols-1 gap-8 lg:grid-cols-2">
     <div
@@ -14,6 +14,7 @@ import NavLink from "../components/Nav.astro";
       <img
         src="/portrait.webp"
         alt="My portrait photo"
+        loading="lazy"
         format="webp"
         width="650"
         height="820"
