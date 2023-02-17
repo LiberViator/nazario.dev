@@ -12,19 +12,12 @@
   }
 
   html {
-    height: stretch;
-    height: -webkit-fill-available;
-    height: -moz-available;
     @apply bg-slate-900;
     @apply text-neutral-50;
     @apply scroll-smooth;
   }
 
   body {
-    /* height: 100vh;
-    height: stretch;
-    height: -webkit-fill-available;
-    height: -moz-available; */
     @apply overflow-x-hidden;
   }
 
@@ -35,12 +28,12 @@
   h1 {
     @apply font-display;
     @apply text-h1;
-    @apply md:text-[3.5rem];
+    @apply sm:text-[3.5rem];
   }
 
   h2 {
     @apply text-h2;
-    @apply md:text-[2rem];
+    @apply sm:text-[2rem];
   }
 
   h3 {

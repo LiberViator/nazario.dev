@@ -15,7 +15,6 @@ import NavLink from "../components/Nav.astro";
         src="/portrait.webp"
         alt="My portrait photo"
         loading="lazy"
-        format="webp"
         width="650"
         height="820"
         class="absolute h-full max-h-[840px] min-w-[1080px] object-contain object-[calc(64%+20vw)] opacity-10 drop-shadow-custom lg:object-right-bottom lg:opacity-100"
@@ -26,7 +25,7 @@ import NavLink from "../components/Nav.astro";
     >
       <header class="flex w-full flex-row pt-8 pb-4">
         <div class="flex flex-col">
-          <h5 class="mb-3 hidden text-slate-500 md:block">Nawiguj do</h5>
+          <h5 class="mb-3 hidden text-slate-500 sm:block">Nawiguj do</h5>
           <nav class="flex flex-row gap-8 text-slate-400">
             {navLinks?.map((_item) => <NavLink link={_item} />)}
           </nav>
@@ -64,7 +63,7 @@ import NavLink from "../components/Nav.astro";
       </div>
       <footer class="flex w-full flex-row items-end justify-end pt-4 pb-8">
         <div class="flex flex-col justify-end">
-          <h5 class="mb-3 hidden text-slate-500 md:block">Znajdź mnie na</h5>
+          <h5 class="mb-3 hidden text-slate-500 sm:block">Znajdź mnie na</h5>
           <div class="flex shrink-0 flex-row justify-end gap-8">
             {
               socialLinks?.map((_item) => (
