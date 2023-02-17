@@ -16,20 +16,24 @@ const {} = Astro.props;
       <ul
         class="max-sm:paddings flex w-full flex-col gap-8 self-center lg:pl-[16%] lg:pb-16"
       >
-        <li class="flex flex-row gap-4">
-          <img src="/email.svg" alt="" width="24" height="24" />
-          <a href="mailto:nazar.poplavsky@gmail.com"
-            ><h5>nazar.poplavsky@gmail.com</h5>
+        <li>
+          <a
+            href="mailto:nazar.poplavsky@gmail.com"
+            class="flex flex-row gap-4"
+          >
+            <img src="/email.svg" alt="Email" width="24" height="24" /><h5>
+              nazar.poplavsky@gmail.com
+            </h5>
           </a>
         </li>
-        <li class="flex flex-row gap-4">
-          <img src="/phone.svg" alt="" width="24" height="24" />
-          <a href="tel:698284677">
+        <li>
+          <a href="tel:698284677" class="flex flex-row gap-4">
+            <img src="/phone.svg" alt="Phone" width="24" height="24" />
             <h5>+48 698 284 677</h5>
           </a>
         </li>
         <li class="flex flex-row gap-4">
-          <img src="/location.svg" alt="" width="24" height="24" />
+          <img src="/location.svg" alt="Location" width="24" height="24" />
           <h5>Kraków, Polska</h5>
         </li>
       </ul>
