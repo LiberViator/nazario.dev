@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 import Title from "../components/Title.astro";
 import Form from "../components/Form.astro";
 
@@ -18,25 +17,19 @@ const {} = Astro.props;
         class="max-sm:paddings flex w-full flex-col gap-8 self-center lg:pl-[16%] lg:pb-16"
       >
         <li class="flex flex-row gap-4">
-          <Image src="/email.svg" alt="" format="svg" width="24" height="24" />
+          <img src="/email.svg" alt="" width="24" height="24" />
           <a href="mailto:nazar.poplavsky@gmail.com"
             ><h5>nazar.poplavsky@gmail.com</h5>
           </a>
         </li>
         <li class="flex flex-row gap-4">
-          <Image src="/phone.svg" alt="" format="svg" width="24" height="24" />
+          <img src="/phone.svg" alt="" width="24" height="24" />
           <a href="tel:698284677">
             <h5>+48 698 284 677</h5>
           </a>
         </li>
         <li class="flex flex-row gap-4">
-          <Image
-            src="/location.svg"
-            alt=""
-            format="svg"
-            width="24"
-            height="24"
-          />
+          <img src="/location.svg" alt="" width="24" height="24" />
           <h5>Kraków, Polska</h5>
         </li>
       </ul>

@@ -40,6 +40,7 @@ module.exports = {
       dropShadow: {
         custom: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
       },
+      boxShadow: { button: "0px 0px 24px rgba(253, 224, 71, 0.16)" },
     },
   },
   plugins: [
