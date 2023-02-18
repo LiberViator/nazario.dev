@@ -38,9 +38,12 @@ module.exports = {
         "form-gradient": "linear-gradient(#33415500 80%, #1e293b 100%)",
       },
       dropShadow: {
-        custom: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
+        portrait: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
       },
-      boxShadow: { button: "0px 0px 24px rgba(253, 224, 71, 0.16)" },
+      boxShadow: {
+        button: "0px 0px 32px rgba(253, 224, 71, 0.16)",
+        container: "8px 8px 32px rgba(0, 0, 0, 0.16)",
+      },
     },
   },
   plugins: [

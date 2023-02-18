@@ -3,7 +3,9 @@ const { title, desc, image } = Astro.props;
 ---
 
 <div class="flex flex-col items-center">
-  <div class="border-shine relative mb-6 h-32 w-32 rounded-xl bg-slate-700">
+  <div
+    class="border-shine relative mb-6 h-32 w-32 rounded-xl bg-slate-700 shadow-container"
+  >
     <img src={image} alt="Advantage illustration" width="128" height="128" />
   </div>
   <h4 class="mb-3 text-center">{title}</h4>

@@ -64,6 +64,7 @@
     @apply text-neutral-900;
     @apply text-h5;
     @apply hover:shadow-button;
+    @apply shadow-container;
   }
 
   a {
