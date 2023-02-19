@@ -17,8 +17,8 @@ module.exports = {
     },
     extend: {
       animation: {
-        heading: "0.6s 0.1s 1 normal ease-out headingAnim forwards",
-        form: "0.6s 0.1s 1 normal ease-out formAnim forwards",
+        heading: "0.6s 0.2s 1 normal ease-out headingAnim forwards",
+        form: "0.6s 0.2s 1 normal ease-out formAnim forwards",
       },
       keyframes: {
         headingAnim: {
