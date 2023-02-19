@@ -12,7 +12,7 @@
   }
 
   h1 {
-    @apply font-serif;
+    @apply font-display;
     @apply text-h1;
     @apply sm:text-[3.5rem];
   }

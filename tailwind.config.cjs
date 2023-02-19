@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
-      serif: ["Nothing You Could Do", "serif"],
+      display: ["Nothing You Could Do", "serif"],
     },
     fontSize: {
       h1: ["3rem", { lineHeight: "125%", fontWeight: "400" }],
