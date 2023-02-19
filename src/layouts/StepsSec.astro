@@ -19,7 +19,7 @@ const { stepsList } = Astro.props;
       x-effect="$el.scroll({left: currentStep * stepCardWidth})"
       class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain scroll-smooth scrollbar-hide md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
     >
-      <ul class="grid w-max grid-flow-col gap-y-4 md:gap-8">
+      <ul class="grid w-max grid-flow-col gap-6 md:gap-8">
         {
           stepsList?.map((_step) => (
             <StepCard
