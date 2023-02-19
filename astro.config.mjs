@@ -10,7 +10,10 @@ import alpinejs from "@astrojs/alpinejs";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import compress from "astro-compress";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://nazario.dev/",
-  integrations: [tailwind(), alpinejs(), image()]
+  integrations: [tailwind(), alpinejs(), compress()],
 });

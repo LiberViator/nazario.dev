@@ -11,20 +11,6 @@
     @apply box-border;
   }
 
-  html {
-    @apply bg-slate-900;
-    @apply text-neutral-50;
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply overflow-x-hidden;
-  }
-
-  main {
-    min-width: 0 !important;
-  }
-
   h1 {
     @apply font-display;
     @apply text-h1;
@@ -54,21 +40,22 @@
 
   .cta_button {
     @apply cursor-pointer;
-    @apply flex;
-    @apply items-center;
-    @apply justify-center;
     @apply h-12;
     @apply hover:scale-105;
     @apply rounded-xl;
     @apply bg-yellow-300;
     @apply text-neutral-900;
     @apply text-h5;
-    @apply hover:shadow-button;
+    @apply hover:shadow-glow;
     @apply shadow-container;
+    @apply transition-all;
+    @apply duration-100;
   }
 
   a {
     @apply hover:text-rose-600;
+    @apply transition-colors;
+    @apply duration-100;
   }
 
   .paddings {

@@ -35,13 +35,14 @@ module.exports = {
           "radial-gradient(720px at 72% 40%, rgba(51, 65, 85, 0.88) 0%, #1e293b 100%)",
         "contact-gradient":
           "radial-gradient(720px at 100% 100%, rgba(51, 65, 85, 0.5) 0%, rgba(18, 25, 40, 0) 100%)",
-        "form-gradient": "linear-gradient(#33415500 80%, #1e293b 100%)",
+        "form-gradient":
+          "linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
       },
       dropShadow: {
         portrait: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
       },
       boxShadow: {
-        button: "0px 0px 32px rgba(253, 224, 71, 0.16)",
+        glow: "0px 0px 32px rgba(253, 224, 71, 0.16)",
         container: "8px 8px 32px rgba(0, 0, 0, 0.16)",
       },
     },
