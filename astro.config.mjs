@@ -12,5 +12,5 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
   site: "https://nazario.dev/",
-  integrations: [tailwind(), alpinejs(), compress()],
+  integrations: [tailwind(), alpinejs(), compress({ path: "." })],
 });
