@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=fallback");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&subset=latin&display=fallback");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=fallback");
 @tailwind base;
 @tailwind components;
