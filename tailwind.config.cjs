@@ -4,8 +4,8 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["Montserrat", "sans-serif"],
-      display: ["Nothing You Could Do", "cursive"],
+      sans: ["Montserrat", "sans-serif", "system-ui"],
+      display: ["Nothing You Could Do", "cursive", "system-ui"],
     },
     fontSize: {
       h1: ["3rem", { lineHeight: "125%", fontWeight: "400" }],
@@ -43,7 +43,9 @@ module.exports = {
       },
       boxShadow: {
         glow: "0px 0px 32px rgba(253, 224, 71, 0.16)",
-        container: "8px 8px 32px rgba(0, 0, 0, 0.16)",
+        container:
+          "4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08)",
+        form: "8px 8px 16px rgba(0, 0, 0, 0.08), 16px 16px 32px rgba(0, 0, 0, 0.08)",
       },
     },
   },

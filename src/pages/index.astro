@@ -7,7 +7,6 @@ import StepsSec from "../layouts/StepsSec.astro";
 import ProsSec from "../layouts/ProsSec.astro";
 import ContactSec from "../layouts/ContactSec.astro";
 
-// const userLang = document.querySelector("#langInput");
 const langList = [
   { value: "eng", name: "English", isDefault: true },
   { value: "pol", name: "Polish", isDefault: false },
@@ -37,12 +36,12 @@ const workList = [
 const prosList = [
   {
     title: "Strony przyjazne SEO",
-    desc: "Dla lepszego wyszukiwania w przeglądarce",
+    desc: "Dla lepszego wyniku w wyszukiwarce",
     image: "/pros/seo.svg",
   },
   {
     title: "Szybkie ładowanie witryn",
-    desc: "Nawet w słabym zasięgu",
+    desc: "Nawet przy słabym zasięgu",
     image: "/pros/speed.svg",
   },
   {
@@ -58,29 +57,40 @@ const prosList = [
 ];
 const stepsList = [
   {
+    title: "Kontakt",
+    desc: "Skontaktuj się ze mną, opisz swoje potrzeby dotyczące strony internetowej, a ja przedstawię Ci wstępną wycenę.",
+    image: "/steps/letter.svg",
+    isCTA: true,
+  },
+  {
     title: "Znajomość",
     desc: "Poznaję Cię i Twoją działalność. Zbieram materiały potrzebne do pracy (teksty, zdjęcia). Ustalasz cele dla witryny, które chcesz osiągnąć.",
     image: "/steps/chat.svg",
+    isCTA: false,
   },
   {
     title: "Projektowanie",
     desc: "Tworzę tzw. szkielet witryny. Względne obrysy komponentów znajdują swoje miejsce na stronie.",
     image: "/steps/puzzle.svg",
+    isCTA: false,
   },
   {
     title: "Design",
     desc: "Strona nabiera kolorów, pojawia się rzeczywisty tekst, zaplanowane zdjęcia. Witryna staje się żywsza za pomocą animacji.",
     image: "/steps/palette.svg",
+    isCTA: false,
   },
   {
     title: "Programowanie",
     desc: "Wizualną część przenoszę w postać kodu. Pojawia się funkcjonał. Witrynę można wypróbować w przeglądarce własnego komputera lub telefonu.",
     image: "/steps/code.svg",
+    isCTA: false,
   },
   {
     title: "Publikacja",
     desc: "Dobieramy odpowiednią domenę. Puszczamy stronę online, by cieszyła twoich klientów.",
     image: "/steps/monitor.svg",
+    isCTA: false,
   },
 ];
 ---

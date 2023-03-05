@@ -4,12 +4,18 @@
 
 @layer base {
   * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     @apply box-border;
   }
 
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+  }
+
   h1 {
+    font-display: fallback;
     @apply font-display;
     @apply text-h1;
     @apply sm:text-[3.5rem];
