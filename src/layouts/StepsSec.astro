@@ -38,7 +38,7 @@ const { stepsList } = Astro.props;
         x-on:click="currentStep > 0 ? currentStep-- : undefined"
       >
         <img
-          src="/arrow.svg"
+          src="/arrow_nav.svg"
           alt="Previous step"
           width="24"
           height="24"
@@ -54,7 +54,7 @@ const { stepsList } = Astro.props;
         aria-label="Next step"
         x-on:click=`currentStep < ${stepsList.length - 1} ? currentStep++ : undefined`
       >
-        <img src="/arrow.svg" alt="Next step" width="24" height="24" />
+        <img src="/arrow_nav.svg" alt="Next step" width="24" height="24" />
       </button>
     </div>
   </div>
