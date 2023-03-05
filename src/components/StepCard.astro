@@ -11,24 +11,23 @@ const { title, desc, image, isCTA } = Astro.props;
   >
     <img src={image} alt="Step icon" width="32" height="32" />
   </div>
-  <div class="mb-3 flex flex-row gap-3">
-    <h4>{title}</h4>
-    {
-      isCTA ? (
-        <>
-          <img src="/arrow_next.svg" alt="Step icon" width="16" height="16" />
 
-          <button
-            x-data
-            x-on:click="document.getElementById('user_name').focus()"
-            class="text-h4 text-yellow-200"
-          >
-            {"Przejdź do formularza"}
-          </button>
-        </>
-      ) : undefined
-    }
-  </div>
+  <h4 class="mb-3">{title}</h4>
 
-  <p class="text-slate-400">{desc}</p>
+  <p class="mb-6 text-slate-400">{desc}</p>
+  {
+    isCTA ? (
+      <div class="flex gap-2">
+        <img src="/arrow_next.svg" alt="Step icon" width="16" height="16" />
+
+        <button
+          x-data
+          x-on:click="document.getElementById('user_name').focus()"
+          class="text-h5 text-yellow-200"
+        >
+          {"Przejdź do formularza"}
+        </button>
+      </div>
+    ) : undefined
+  }
 </li>
