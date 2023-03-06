@@ -42,11 +42,6 @@
     @apply text-p;
   }
 
-  .better-p {
-    @apply text-justify;
-    hyphens: auto;
-  }
-
   .cta_button {
     @apply cursor-pointer;
     @apply h-12;
