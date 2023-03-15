@@ -47,13 +47,14 @@
     @apply h-12;
     @apply hover:scale-105;
     @apply rounded-xl;
-    @apply bg-yellow-300;
-    @apply text-neutral-900;
     @apply text-h5;
-    @apply hover:shadow-glow;
     @apply shadow-container;
     @apply transition-all;
     @apply duration-100;
+    @apply flex;
+    @apply gap-3;
+    @apply items-center;
+    @apply justify-center;
   }
 
   a {

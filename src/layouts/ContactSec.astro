@@ -6,14 +6,14 @@ const {} = Astro.props;
 ---
 
 <section
-  id="contact"
-  class="sm:paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 bg-contact-gradient pt-12 md:pt-16"
+	id="contact"
+	class="sm:paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 bg-contact-gradient pt-12 md:pt-16"
 >
-  <div class="flex w-full max-w-6xl flex-col items-center">
-    <Title text="Kontakt" />
-    <div class="grid w-full grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-      <Form />
-      <ul
+	<div class="flex w-full max-w-6xl flex-col items-center">
+		<Title text="Kontakt" />
+		<div class="grid w-full grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+			<Form />
+			<!-- <ul
         class="max-sm:paddings flex w-full flex-col gap-8 self-center lg:pl-[16%] lg:pb-16"
       >
         <li>
@@ -35,8 +35,31 @@ const {} = Astro.props;
           <img src="/location.svg" alt="Location" width="24" height="24" />
           Kraków, Polska
         </li>
-      </ul>
-      <!-- <img src="/sign.svg" alt="" class="absolute" /> -->
-    </div>
-  </div>
+      </ul> -->
+			<div
+				class="max-sm:paddings flex w-full flex-col items-center gap-8 self-center lg:pl-[16%] lg:pb-16"
+			>
+				<h3 class="text-center">
+					Zapraszam do kontaktu ze mną za pomocą Messengera
+				</h3>
+				<button
+					onclick="window.open('https://m.me/nazar.poplawski/','_blank')"
+					class="cta_button w-64 bg-blue-600 text-neutral-50 hover:shadow-glow-blue"
+				>
+					<img
+						src="/messenger.svg"
+						alt=""
+						alt="Social media"
+						width="24"
+						height="24"
+					/>
+					Messenger
+				</button>
+				<p class="text-center text-slate-400">
+					Lub wysyłając maila za pomocą formularza
+				</p>
+			</div>
+			<!-- <img src="/sign.svg" alt="" class="absolute" /> -->
+		</div>
+	</div>
 </section>
