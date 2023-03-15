@@ -14,10 +14,10 @@ const {} = Astro.props;
 		<div class="grid w-full grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
 			<Form />
 			<div
-				class="max-sm:paddings flex w-full flex-col items-center gap-8 self-center lg:pl-[16%] lg:pb-16"
+				class="max-sm:paddings flex w-full flex-col items-center gap-8 self-center lg:items-start lg:pl-[16%] lg:pb-16"
 			>
-				<h3 class="text-center leading-[150%]">
-					Zapraszam do kontaktu ze mną za pomocą Messengera
+				<h3 class="text-center leading-[150%] lg:text-left">
+					Zapraszam do kontaktu ze mną <br /> za pomocą Messengera
 				</h3>
 				<button
 					onclick="window.open('https://m.me/nazar.poplawski/','_blank')"
@@ -32,7 +32,7 @@ const {} = Astro.props;
 					/>
 					Messenger
 				</button>
-				<p class="text-center text-slate-400">
+				<p class="text-center text-slate-400 lg:text-left">
 					Lub wysyłając maila za pomocą formularza
 				</p>
 			</div>
