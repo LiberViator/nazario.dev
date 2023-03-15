@@ -43,7 +43,7 @@ module.exports = {
 			},
 			boxShadow: {
 				"glow-yellow": "0px 0px 32px rgba(253, 224, 71, 0.16)",
-				"glow-blue": "0px 0px 32px rgba(191, 219, 254, 0.16)",
+				"glow-blue": "0px 0px 32px rgba(147, 197, 253, 0.16)",
 				container:
 					"4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08)",
 				form: "8px 8px 16px rgba(0, 0, 0, 0.08), 16px 16px 32px rgba(0, 0, 0, 0.08)",
