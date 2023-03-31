@@ -7,22 +7,19 @@ const {} = Astro.props;
 
 <section
 	id="contact"
-	class="sm:paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 bg-contact-gradient pt-12 md:pt-16"
->
+	class="sm:paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 bg-contact-gradient pt-12 md:pt-16">
 	<div class="flex w-full max-w-6xl flex-col items-center">
 		<Title text="Kontakt" />
 		<div class="grid w-full grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
 			<Form />
 			<div
-				class="max-sm:paddings flex w-full flex-col items-center gap-8 self-center lg:items-start lg:pl-[16%] lg:pb-16"
-			>
-				<h3 class="max-w-[360px] text-center leading-[150%] lg:text-left">
+				class="max-sm:paddings flex w-full flex-col items-center self-center lg:items-start lg:pl-[16%] lg:pb-16">
+				<h3 class="mb-8 max-w-[360px] text-center leading-[150%] lg:text-left">
 					Zapraszam do kontaktu ze mną za pomocą Messengera
 				</h3>
 				<button
 					onclick="window.open('https://m.me/nazar.poplawski/')"
-					class="cta_button w-64 bg-blue-600 text-neutral-50 hover:shadow-glow-blue"
-				>
+					class="cta_button mb-6 w-64 bg-blue-600 text-neutral-50 hover:shadow-glow-blue">
 					<img
 						src="/messenger.svg"
 						alt=""
