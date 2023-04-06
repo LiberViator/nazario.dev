@@ -9,16 +9,14 @@ const { stepsList } = Astro.props;
 	id="steps"
 	x-data="{ currentStep: 0, stepCardWidth: $refs.stepCard.offsetWidth }"
 	x-on:resize.window.debounce="() => stepCardWidth = $refs.stepCard.offsetWidth"
-	class="flex w-full flex-col items-center overflow-hidden bg-slate-900 py-12 md:py-16"
->
+	class="flex w-full flex-col items-center overflow-hidden bg-slate-900 py-12 md:py-16">
 	<div class="flex w-full flex-col items-center gap-x-8">
 		<Title text="Etapy Działania" />
 		<div
 			id="slider"
 			x-on:scroll.debounce.50ms="currentStep = Math.round($el.scrollLeft / stepCardWidth)"
 			x-effect="$el.scroll({left: currentStep * stepCardWidth})"
-			class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain scroll-smooth scrollbar-hide md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]"
-		>
+			class="paddings mb-8 w-full snap-x snap-mandatory scroll-px-6 items-start overflow-x-scroll overscroll-x-contain scroll-smooth scrollbar-hide md:scroll-px-12 lg:scroll-px-[max(calc((100vw-1152px)/2),theme(spacing.8))] lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
 			<ul class="grid w-fit grid-flow-col gap-6 md:gap-8">
 				{
 					stepsList?.map((_step) => (
@@ -36,10 +34,9 @@ const { stepsList } = Astro.props;
 		<div class="flex flex-row items-center gap-6">
 			<button
 				aria-label="Previous step"
-				x-on:click="currentStep > 0 ? currentStep-- : undefined"
-			>
+				x-on:click="currentStep > 0 ? currentStep-- : undefined">
 				<img
-					src="/arrow_nav.svg"
+					src="/assets/arrow_nav.svg"
 					alt="Previous step"
 					width="24"
 					height="24"
@@ -48,14 +45,17 @@ const { stepsList } = Astro.props;
 			</button>
 			<h5
 				class="w-12 text-center text-slate-500"
-				x-text=`currentStep + 1 +"${" z " + stepsList.length}"`
-			>
+				x-text=`currentStep + 1 +"${" z " + stepsList.length}"`>
 			</h5>
 			<button
 				aria-label="Next step"
-				x-on:click=`currentStep < ${stepsList.length - 1} ? currentStep++ : undefined`
-			>
-				<img src="/arrow_nav.svg" alt="Next step" width="24" height="24" />
+				x-on:click=`currentStep < ${stepsList.length - 1} ? currentStep++ : undefined`>
+				<img
+					src="/assets/arrow_nav.svg"
+					alt="Next step"
+					width="24"
+					height="24"
+				/>
 			</button>
 		</div>
 	</div>
