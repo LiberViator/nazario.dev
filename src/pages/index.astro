@@ -4,7 +4,7 @@ import HeroSec from "../layouts/HeroSec.astro";
 import AboutSec from "../layouts/AboutSec.astro";
 import WorkSec from "../layouts/WorkSec.astro";
 import StepsSec from "../layouts/StepsSec.astro";
-import ProsSec from "../layouts/ProsSec.astro";
+import ValuesSec from "../layouts/ValuesSec.astro";
 import ContactSec from "../layouts/ContactSec.astro";
 
 const langList = [
@@ -33,7 +33,7 @@ const workList = [
 	{ name: "Project 2" },
 	{ name: "Project 3" },
 ];
-const prosList = [
+const valuesList = [
 	{
 		title: "Strony przyjazne SEO",
 		desc: "Dla lepszego wyniku w wyszukiwarce",
@@ -100,6 +100,6 @@ const stepsList = [
 	<!-- <AboutSec toolList={toolList} /> -->
 	<!-- <WorkSec workList={workList} /> -->
 	<StepsSec stepsList={stepsList} />
-	<ProsSec prosList={prosList} />
+	<ValuesSec valuesList={valuesList} />
 	<ContactSec />
 </Layout>

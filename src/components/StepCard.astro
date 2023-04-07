@@ -1,35 +1,20 @@
 ---
+import ActionLink from "./ActionLink.astro";
 const { id, title, desc, image, isCTA, order } = Astro.props;
 ---
 
 <li
 	x-ref="stepCard"
-	class="col-span-1 flex w-[calc(100vw-48px)] snap-start snap-always flex-col last:snap-end sm:w-[560px]">
+	class="col-span-1 flex w-[calc(100vw-48px)] snap-start snap-always flex-col items-center last:snap-end sm:w-[560px] sm:items-start">
 	<div
 		class="border-shine relative mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-slate-700 shadow-container">
 		<img src={image} alt="Step icon" width="32" height="32" />
 	</div>
-
 	<h4 class="mb-3">{title}</h4>
-
-	<p class="mb-4 text-slate-400">{desc}</p>
+	<p class="mb-4 text-center text-slate-400 sm:text-left">{desc}</p>
 	{
 		isCTA ? (
-			<div class="flex gap-2">
-				<img
-					src="/assets/arrow_next.svg"
-					alt="Step icon"
-					width="16"
-					height="16"
-				/>
-
-				<button
-					x-data
-					x-on:click="document.getElementById('user_name').focus()"
-					class="text-h5 text-yellow-200">
-					{"Przejdź do formularza"}
-				</button>
-			</div>
+			<ActionLink text="Przejdź do formularza" goToId="user_name" />
 		) : undefined
 	}
 </li>

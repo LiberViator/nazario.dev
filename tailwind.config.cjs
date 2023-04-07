@@ -8,14 +8,22 @@ module.exports = {
 			display: ["Nothing You Could Do", "cursive", "system-ui"],
 		},
 		fontSize: {
-			h1: ["3rem", { lineHeight: "125%", fontWeight: "400" }],
-			h2: ["1.5rem", { lineHeight: "150%", fontWeight: "400" }],
-			h3: ["1.375rem", { lineHeight: "125%", fontWeight: "400" }],
-			h4: ["1.125rem", { lineHeight: "125%", fontWeight: "600" }],
-			h5: ["1.125rem", { lineHeight: "125%", fontWeight: "400" }],
-			p: ["1.125rem", { lineHeight: "175%", fontWeight: "400" }],
+			sm: "0.875rem",
+			base: "1.125rem",
+			lg: "1.375rem",
+			xl: "2rem",
+			"2xl": "3rem",
+			"3xl": "3.5rem",
 		},
 		extend: {
+			// fontSize: {
+			// 	h1: ["3rem", { lineHeight: "125%", fontWeight: "400" }],
+			// 	h2: ["1.5rem", { lineHeight: "150%", fontWeight: "400" }],
+			// 	h3: ["1.375rem", { lineHeight: "125%", fontWeight: "400" }],
+			// 	h4: ["1.125rem", { lineHeight: "125%", fontWeight: "600" }],
+			// 	h5: ["1.125rem", { lineHeight: "125%", fontWeight: "400" }],
+			// 	p: ["1.125rem", { lineHeight: "175%", fontWeight: "400" }],
+			// },
 			animation: {
 				heading: "0.6s 0.2s 1 normal ease-out headingAnim forwards",
 				form: "0.6s 0.2s 1 normal ease-out formAnim forwards",

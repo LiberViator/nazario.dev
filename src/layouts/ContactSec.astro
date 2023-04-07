@@ -11,9 +11,8 @@ const {} = Astro.props;
 	<div class="flex w-full max-w-6xl flex-col items-center">
 		<Title text="Kontakt" />
 		<div class="grid w-full grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
-			<Form />
 			<div
-				class="max-sm:paddings flex w-full flex-col items-center self-center lg:items-start lg:pl-[16%] lg:pb-16">
+				class="max-sm:paddings flex w-full flex-col items-center justify-center lg:order-1 lg:items-start lg:pb-16 lg:pl-[16%]">
 				<h3 class="mb-8 max-w-[360px] text-center leading-[150%] lg:text-left">
 					Zapraszam do kontaktu ze mną za pomocą Messengera
 				</h3>
@@ -33,6 +32,7 @@ const {} = Astro.props;
 					Lub wysyłając maila za pomocą formularza
 				</p>
 			</div>
+			<Form />
 			<!-- <img src="/assets/sign.svg" alt="" class="absolute" /> -->
 		</div>
 	</div>

@@ -3,90 +3,104 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply box-border;
-  }
+	html {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-display: swap;
+		text-rendering: optimizeLegibility;
+	}
 
-  html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-display: swap;
-    text-rendering: optimizeLegibility;
-  }
+	h1 {
+		font-display: fallback;
+		@apply font-display;
+		@apply text-2xl;
+		@apply sm:text-3xl;
+		@apply leading-[125%];
+	}
 
-  h1 {
-    font-display: fallback;
-    @apply font-display;
-    @apply text-h1;
-    @apply sm:text-[3.5rem];
-  }
+	h2 {
+		@apply text-lg;
+		@apply sm:text-xl;
+		@apply leading-[150%];
+	}
 
-  h2 {
-    @apply text-h2;
-    @apply sm:text-[2rem];
-  }
+	h3 {
+		@apply text-lg;
+		@apply leading-[125%];
+	}
 
-  h3 {
-    @apply text-h3;
-  }
+	h4 {
+		@apply text-base;
+		@apply leading-[125%];
+		@apply font-semibold;
+	}
 
-  h4 {
-    @apply text-h4;
-  }
+	h5 {
+		@apply text-base;
+		@apply leading-[125%];
+	}
 
-  h5 {
-    @apply text-h5;
-  }
+	h6 {
+		@apply text-sm;
+		@apply leading-[125%];
+	}
 
-  p {
-    @apply text-p;
-  }
+	p {
+		@apply text-base;
+		@apply leading-[175%];
+	}
 
-  .cta_button {
-    @apply cursor-pointer;
-    @apply h-12;
-    @apply hover:scale-105;
-    @apply rounded-xl;
-    @apply text-h5;
-    @apply shadow-container;
-    @apply transition-all;
-    @apply duration-100;
-    @apply flex;
-    @apply gap-3;
-    @apply items-center;
-    @apply justify-center;
-  }
+	a {
+		@apply hover:text-rose-600;
+		@apply transition-colors;
+		@apply duration-100;
+	}
 
-  a {
-    @apply hover:text-rose-600;
-    @apply transition-colors;
-    @apply duration-100;
-  }
+	.paddings {
+		@apply px-6;
+		@apply sm:px-8;
+		@apply md:px-12;
+	}
 
-  .paddings {
-    @apply px-6;
-    @apply sm:px-8;
-    @apply md:px-12;
-  }
+	.border-shine::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		-webkit-mask: linear-gradient(#fff 0 0) padding-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: destination-out;
+		mask-composite: exclude;
+		border: 1px solid transparent;
+		border-radius: inherit;
+		background: linear-gradient(135deg, #475569 0%, #33415500 40%) border-box;
+		pointer-events: none;
+		content: "";
+	}
 
-  .border-shine::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    border: 1px solid transparent;
-    border-radius: inherit;
-    background: linear-gradient(135deg, #475569 0%, #33415500 40%) border-box;
-    pointer-events: none;
-    content: "";
-  }
+	[x-cloak] {
+		visibility: hidden !important;
+	}
 
-  [x-cloak] {
-    visibility: hidden !important;
-  }
+	@layer components {
+		.cta_button {
+			@apply cursor-pointer;
+			@apply h-12;
+			@apply hover:scale-105;
+			@apply rounded-xl;
+			@apply text-base;
+			@apply leading-[150%];
+			@apply shadow-container;
+			@apply transition-all;
+			@apply duration-100;
+			@apply flex;
+			@apply gap-3;
+			@apply items-center;
+			@apply justify-center;
+		}
+		.cta_link {
+			@apply cursor-pointer;
+		}
+	}
 }
