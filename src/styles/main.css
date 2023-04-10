@@ -21,7 +21,7 @@
 	h2 {
 		@apply text-lg;
 		@apply sm:text-xl;
-		@apply leading-[150%];
+		@apply !leading-[150%];
 	}
 
 	h3 {
@@ -55,6 +55,10 @@
 		@apply transition-colors;
 		@apply duration-100;
 	}
+
+	/* input {
+		@apply text-base;
+	} */
 
 	.paddings {
 		@apply px-6;

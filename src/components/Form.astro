@@ -17,20 +17,20 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 
 	<fieldset class="flex w-full flex-wrap gap-x-4">
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_name" class="mb-3 text-h5 text-slate-400">Imię:</label>
+			<label for="user_name" class="mb-3 text-base text-slate-400">Imię:</label>
 			<input
 				id="user_name"
 				name="Name"
 				type="name"
 				minlength="3"
-				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
+				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 				placeholder="Jan"
 				required
 			/>
 		</div>
 
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_number" class="mb-3 text-h5 text-slate-400"
+			<label for="user_number" class="mb-3 text-base text-slate-400"
 				>Numer: (Opcj.)</label
 			>
 			<input
@@ -38,29 +38,29 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 				name="Mobile number"
 				type="tel"
 				minlength="9"
-				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
+				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 				placeholder="+48 505 050 505"
 			/>
 		</div>
 	</fieldset>
 
-	<label for="user_email" class="mb-3 text-h5 text-slate-400">E-Mail:</label>
+	<label for="user_email" class="mb-3 text-base text-slate-400">E-Mail:</label>
 	<input
 		id="user_email"
 		name="Email"
 		type="email"
-		class="mb-4 flex h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-h5"
+		class="mb-4 flex h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 		placeholder="mój@gmail.com"
 		required
 	/>
 
-	<label for="user_message" class="mb-3 text-h5 text-slate-400"
+	<label for="user_message" class="mb-3 text-base text-slate-400"
 		>Wiadomość:</label
 	>
 	<textarea
 		id="user_message"
 		name="Message"
-		class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl bg-slate-600 px-6 py-3 text-p placeholder:text-slate-400"
+		class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl bg-slate-600 px-6 py-3 text-base leading-7 placeholder:text-slate-400"
 		placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie i potrzebuję strony internetowej, która zachęci nowych klientów do skorzystania z moich usług. Chcę, aby była atrakcyjna i zawierała wszystkie niezbędne informacje."
 		required></textarea>
 	<input type="hidden" name="redirect" value="https://web3forms.com/success" />

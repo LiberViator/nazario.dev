@@ -1,11 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import HeroSec from "../layouts/HeroSec.astro";
-import AboutSec from "../layouts/AboutSec.astro";
-import WorkSec from "../layouts/WorkSec.astro";
-import StepsSec from "../layouts/StepsSec.astro";
-import ValuesSec from "../layouts/ValuesSec.astro";
-import ContactSec from "../layouts/ContactSec.astro";
+import "../styles/main.css";
+
+import Hero from "../layouts/Hero.astro";
+import About from "../layouts/About.astro";
+import Work from "../layouts/Work.astro";
+import Steps from "../layouts/Steps.astro";
+import Values from "../layouts/Values.astro";
+import Questions from "../layouts/Questions.astro";
+import Contact from "../layouts/Contact.astro";
 
 const langList = [
 	{ value: "eng", name: "English", isDefault: true },
@@ -93,13 +95,62 @@ const stepsList = [
 		isCTA: false,
 	},
 ];
+const questionsList = [
+	{ question: "Czy wystawiam faktury?", answer: "Tak, wystawiam faktury VAT." },
+	{
+		question: "Jaka jest cena projektu?",
+		answer:
+			"Cena projektu uzależniona jest od jego skali i złożoności. Zapraszam do kontaktu, abym mógł przygotować dla Ciebie indywidualną ofertę.",
+	},
+	{
+		question: "Jak długo trwa proces tworzenia witryny?",
+		answer:
+			"Czas trwania projektu zależy od jego skali i złożoności. Zazwyczaj trwa od 2 do 4 tygodni.",
+	},
+	{
+		question: "Jaka jest cena poprawek?",
+		answer:
+			"Poprawki są wliczone w cenę projektu. Jednakże, poprawki po upłynięciu 6-miesięcznego okresu wsparcia technicznego są płatne.",
+	},
+];
 ---
 
-<Layout>
-	<HeroSec navLinks={navLinks} socialLinks={socialLinks} />
-	<!-- <AboutSec toolList={toolList} /> -->
-	<!-- <WorkSec workList={workList} /> -->
-	<StepsSec stepsList={stepsList} />
-	<ValuesSec valuesList={valuesList} />
-	<ContactSec />
-</Layout>
+<html lang="pl" class="scroll-smooth bg-slate-900 text-neutral-50">
+	<head>
+		<!-- Website -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<!-- About -->
+		<title>Nazar Popławski</title>
+		<meta
+			name="description"
+			content="Cześć, jestem Nazar! Zajmuję się tworzeniem stron internetowych. Ukończyłem studia na kierunku Grafiki Reklamowej i Multimediów w Krakowie, aby wykorzystać swoje umiejętności w praktyce. Po zakończeniu studiów zacząłem uczyć się programowania, aby lepiej zrozumieć, jak tworzyć strony w życiu. Moim następnym krokiem jest nawiązanie współpracy z przedsiębiorcami, by pomagać im w rozwoju ich własnej działalności. Oferuję stworzenie zarówno estetycznych, jak i funkcjonalnych stron internetowych, które spełniają wymagania Twoich klientów."
+		/>
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+		<meta property="og:image" content="/assets/facebook_banner.jpg" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nothing+You+Could+Do&display=fallback"
+			rel="preload stylesheet"
+		/>
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body class="overflow-x-hidden">
+		<Hero navLinks={navLinks} socialLinks={socialLinks} />
+		<!-- <About toolList={toolList} /> -->
+		<!-- <Work workList={workList} /> -->
+		<Steps stepsList={stepsList} />
+		<Values valuesList={valuesList} />
+		<Questions questionsList={questionsList} />
+		<Contact />
+		<script
+			defer
+			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
+		></script>
+	</body>
+</html>

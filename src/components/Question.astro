@@ -1,0 +1,12 @@
+---
+const { question } = Astro.props;
+---
+
+<div>
+	<div class="h-12">
+		<h5>{question.question}</h5>
+	</div>
+	<div class="hidden">
+		<p>{question.answer}</p>
+	</div>
+</div>
