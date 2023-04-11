@@ -154,6 +154,6 @@ const data = await res.json();
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
-		{console.log(data.map((item) => <li>{item.title}</li>))}
+		<div class="hidden">{data.map((item) => item.title)}</div>
 	</body>
 </html>
