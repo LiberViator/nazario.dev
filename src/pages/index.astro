@@ -113,6 +113,8 @@ const questionsList = [
 			"Poprawki są wliczone w cenę projektu. Jednakże, poprawki po upłynięciu 6-miesięcznego okresu wsparcia technicznego są płatne.",
 	},
 ];
+const res = await fetch("https://api.sampleapis.com/coffee/hot");
+const data = await res.json();
 ---
 
 <html lang="pl" class="scroll-smooth bg-slate-900 text-neutral-50">
@@ -152,5 +154,8 @@ const questionsList = [
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
+		<ul>
+			{data.map((item) => <li>{item.title}</li>)}
+		</ul>
 	</body>
 </html>
