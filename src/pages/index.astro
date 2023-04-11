@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import "../styles/main.css";
 
 import Hero from "../layouts/Hero.astro";
@@ -156,6 +158,6 @@ const data = await res.json();
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
-		<div class="hidden">{JSON.stringify(data)}</div>
+		<div set:html={JSON.stringify(data)} class="hidden" />
 	</body>
 </html>
