@@ -115,10 +115,6 @@ const questionsList = [
 			"Poprawki są wliczone w cenę projektu. Jednakże, poprawki po upłynięciu 6-miesięcznego okresu wsparcia technicznego są płatne.",
 	},
 ];
-const res = await fetch(
-	"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
-);
-const data = await res.json();
 ---
 
 <html lang="pl" class="scroll-smooth bg-slate-900 text-neutral-50">
@@ -152,12 +148,11 @@ const data = await res.json();
 		<!-- <Work workList={workList} /> -->
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
-		<!-- <Questions questionsList={questionsList} /> -->
+		<Questions questionsList={questionsList} />
 		<Contact />
 		<script
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
-		<div set:html={JSON.stringify(data)} class="hidden" />
 	</body>
 </html>

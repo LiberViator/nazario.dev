@@ -106,5 +106,16 @@
 		.cta_link {
 			@apply cursor-pointer;
 		}
+		.accordion {
+			@apply max-h-12;
+			/* @apply transition-[height]; */
+			/* transition: max-height 0.2s ease-out !important; */
+			/* @apply transition-[max-height];
+			@apply duration-1000;
+			@apply ease-linear; */
+		}
+		.accordion-active {
+			@apply max-h-64;
+		}
 	}
 }
