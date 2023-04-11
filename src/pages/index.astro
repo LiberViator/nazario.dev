@@ -148,14 +148,12 @@ const data = await res.json();
 		<!-- <Work workList={workList} /> -->
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
-		<Questions questionsList={questionsList} />
+		<!-- <Questions questionsList={questionsList} /> -->
 		<Contact />
 		<script
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
-		<ul>
-			{data.map((item) => <li>{item.title}</li>)}
-		</ul>
+		{console.log(data.map((item) => <li>{item.title}</li>))}
 	</body>
 </html>
