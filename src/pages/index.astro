@@ -113,7 +113,9 @@ const questionsList = [
 			"Poprawki są wliczone w cenę projektu. Jednakże, poprawki po upłynięciu 6-miesięcznego okresu wsparcia technicznego są płatne.",
 	},
 ];
-const res = await fetch("https://api.sampleapis.com/coffee/hot");
+const res = await fetch(
+	"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
+);
 const data = await res.json();
 ---
 
@@ -154,6 +156,6 @@ const data = await res.json();
 			defer
 			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
 		></script>
-		<div class="hidden">{data.map((item) => item.title)}</div>
+		<div class="hidden">{JSON.stringify(data)}</div>
 	</body>
 </html>
