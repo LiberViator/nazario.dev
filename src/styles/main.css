@@ -19,35 +19,29 @@
 	}
 
 	h2 {
-		@apply text-lg;
-		@apply sm:text-xl;
-		@apply !leading-[150%];
+		@apply text-lg/8;
+		@apply sm:text-xl/10;
 	}
 
 	h3 {
-		@apply text-lg;
-		@apply leading-[125%];
+		@apply text-lg/6;
 	}
 
 	h4 {
-		@apply text-base;
-		@apply leading-[125%];
+		@apply text-base/6;
 		@apply font-semibold;
 	}
 
 	h5 {
-		@apply text-base;
-		@apply leading-[125%];
+		@apply text-base/6;
 	}
 
 	h6 {
-		@apply text-sm;
-		@apply leading-[125%];
+		@apply text-sm/5;
 	}
 
 	p {
-		@apply text-base;
-		@apply leading-[175%];
+		@apply text-base/8;
 	}
 
 	a {
@@ -93,8 +87,7 @@
 			@apply h-12;
 			@apply hover:scale-105;
 			@apply rounded-xl;
-			@apply text-base;
-			@apply leading-[150%];
+			@apply text-base/6;
 			@apply shadow-container;
 			@apply transition-all;
 			@apply duration-100;
@@ -103,19 +96,16 @@
 			@apply items-center;
 			@apply justify-center;
 		}
-		.cta_link {
-			@apply cursor-pointer;
-		}
-		.accordion {
-			@apply max-h-12;
+		.accordion .content {
+			@apply max-h-0;
 			/* @apply transition-[height]; */
 			/* transition: max-height 0.2s ease-out !important; */
 			/* @apply transition-[max-height];
 			@apply duration-1000;
 			@apply ease-linear; */
 		}
-		.accordion-active {
-			@apply max-h-64;
+		.accordion-active .content {
+			@apply max-h-96;
 		}
 	}
 }

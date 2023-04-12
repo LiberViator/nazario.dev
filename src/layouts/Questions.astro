@@ -1,6 +1,6 @@
 ---
 import Title from "../components/Title.astro";
-import Question from "../components/Question.astro";
+import Accordion from "../components/Accordion.astro";
 import ActionLink from "../components/ActionLink.astro";
 
 const { questionsList } = Astro.props;
@@ -8,20 +8,24 @@ const { questionsList } = Astro.props;
 
 <section
 	id="contact"
-	class="sm:paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 py-12 md:py-16">
+	class="paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 py-12 md:py-16">
 	<div class="flex w-full max-w-6xl flex-col items-center">
 		<Title text="Pytania i Odpowiedzi" />
 		<div
-			class="max-sm:paddings grid w-full grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
+			class="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-12 lg:grid-cols-2">
 			<div
-				class="flex w-full flex-col items-center justify-center lg:items-start lg:pr-[16%]">
+				class="flex w-full max-w-[560px] flex-col items-center justify-center lg:items-start lg:pr-[16%]">
 				<h3 class="mb-6 text-center leading-[150%] lg:text-left">
 					Możesz zadać mi pytanie wysyłając wiadomość przez formularz kontaktowy
 				</h3>
 				<ActionLink />
 			</div>
 			<div class="flex flex-col gap-6 sm:max-w-[560px]">
-				{questionsList?.map((question) => <Question question={question} />)}
+				{
+					questionsList?.map((item) => (
+						<Accordion title={item.question} content={item.answer} />
+					))
+				}
 			</div>
 		</div>
 	</div>
