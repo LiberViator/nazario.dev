@@ -20,7 +20,7 @@ const { questionsList } = Astro.props;
 				</h3>
 				<ActionLink />
 			</div>
-			<div class="flex flex-col gap-6 sm:max-w-[560px]">
+			<div class="flex flex-col gap-8 sm:max-w-[560px]">
 				{
 					questionsList?.map((item) => (
 						<Accordion title={item.question} content={item.answer} />

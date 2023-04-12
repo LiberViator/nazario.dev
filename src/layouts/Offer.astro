@@ -1,0 +1,44 @@
+---
+import Title from "../components/Title.astro";
+import Accordion from "../components/Accordion.astro";
+import ActionLink from "../components/ActionLink.astro";
+
+const {} = Astro.props;
+---
+
+<section
+	id="contact"
+	class="paddings flex w-full flex-col items-center overflow-hidden bg-slate-900 py-12 md:py-16">
+	<div class="flex w-full max-w-6xl flex-col items-center">
+		<Title text="Moja Oferta" />
+		<div class="flex flex-col gap-8 md:flex-row">
+			<div
+				class="border-shine relative max-w-[400px] rounded-xl bg-slate-700 px-6 py-8">
+				<div class="mb-8 flex justify-center"><h3>Tworzenie witryny</h3></div>
+
+				<ul class="flex flex-col gap-3 text-base/6">
+					<li>Dostosowanie do urządzeń mobilnych</li>
+					<li>Domena z certyfikatem SSL</li>
+					<li>Hosting z serwerem w Polsce</li>
+					<li>Dostosowany adres e-mail</li>
+					<li>Szkolenia z zarządzania stroną</li>
+					<li>Optymalizacja witryny pod kątem prędkości ładowania i SEO</li>
+					<li>Wsparcie techniczne przez 6 miesięcy</li>
+				</ul>
+			</div>
+			<div
+				class="border-shine relative max-w-[400px] rounded-xl bg-slate-700 px-6 py-8">
+				<div class="mb-8 flex justify-center"><h3>Dodatkowe usługi</h3></div>
+				<ul class="flex flex-col gap-3 text-base/6">
+					<li>Ciemny / Jasny tryb strony</li>
+					<li>Integracja z narzędziami analitycznymi</li>
+					<li>Integracja z systemami płatności</li>
+					<li>Wdrożenie bloga</li>
+					<li>Zarządzanie treściami (CMS)</li>
+					<li>Integracja z social mediami</li>
+					<li>Wsparcie techniczne po upływie 6-miesięcznego okresu</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

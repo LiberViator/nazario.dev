@@ -4,7 +4,7 @@ export const prerender = true;
 import "../styles/main.css";
 
 import Hero from "../layouts/Hero.astro";
-import About from "../layouts/About.astro";
+import Offer from "../layouts/Offer.astro";
 import Work from "../layouts/Work.astro";
 import Steps from "../layouts/Steps.astro";
 import Values from "../layouts/Values.astro";
@@ -144,10 +144,10 @@ const questionsList = [
 	</head>
 	<body class="overflow-x-hidden">
 		<Hero navLinks={navLinks} socialLinks={socialLinks} />
-		<!-- <About toolList={toolList} /> -->
-		<!-- <Work workList={workList} /> -->
+		<Offer />
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
+		<!-- <Work workList={workList} /> -->
 		<Questions questionsList={questionsList} />
 		<Contact />
 		<script
