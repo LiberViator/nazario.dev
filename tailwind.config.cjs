@@ -16,14 +16,6 @@ module.exports = {
 			"3xl": "3.5rem",
 		},
 		extend: {
-			// fontSize: {
-			// 	h1: ["3rem", { lineHeight: "125%", fontWeight: "400" }],
-			// 	h2: ["1.5rem", { lineHeight: "150%", fontWeight: "400" }],
-			// 	h3: ["1.375rem", { lineHeight: "125%", fontWeight: "400" }],
-			// 	h4: ["1.125rem", { lineHeight: "125%", fontWeight: "600" }],
-			// 	h5: ["1.125rem", { lineHeight: "125%", fontWeight: "400" }],
-			// 	p: ["1.125rem", { lineHeight: "175%", fontWeight: "400" }],
-			// },
 			animation: {
 				heading: "0.6s 0.2s 1 normal ease-out headingAnim forwards",
 				form: "0.6s 0.2s 1 normal ease-out formAnim forwards",
@@ -41,6 +33,8 @@ module.exports = {
 			backgroundImage: {
 				"hero-gradient":
 					"radial-gradient(720px at 72% 40%, rgba(51, 65, 85, 0.88) 0%, #1e293b 100%)",
+				"offer-gradient":
+					"radial-gradient(128% 689.91% at 64% 40%, #475569 0%, #334155 100%)",
 				"contact-gradient":
 					"radial-gradient(720px at 100% 100%, rgba(51, 65, 85, 0.5) 0%, rgba(18, 25, 40, 0) 100%)",
 				"form-gradient":
