@@ -34,7 +34,7 @@ module.exports = {
 				"hero-gradient":
 					"radial-gradient(720px at 72% 40%, rgba(51, 65, 85, 0.88) 0%, #1e293b 100%)",
 				"offer-gradient":
-					"radial-gradient(128% 689.91% at 64% 40%, #475569 0%, #334155 100%)",
+					"radial-gradient(80% 512% at 64% 16%, #475569 0%, #334155 100%)",
 				"contact-gradient":
 					"radial-gradient(720px at 100% 100%, rgba(51, 65, 85, 0.5) 0%, rgba(18, 25, 40, 0) 100%)",
 				"form-gradient":

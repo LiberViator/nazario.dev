@@ -1,16 +1,14 @@
 ---
-const {text, image} = Astro.props;
+const { text, image, goTo, open } = Astro.props;
 ---
 
 <button
-	onclick="window.open('https://m.me/nazar.poplawski/')"
+	onclick={`${goTo ? window.open(open) : document.getElementById(goTo).focus()}`}
 	class="cta_button mb-6 w-64 bg-blue-600 text-neutral-50 hover:shadow-glow-blue">
-	<img
-		src="/assets/messenger.svg"
-		alt=""
-		alt="Social media"
-		width="24"
-		height="24"
-	/>
-	Messenger
+	{
+		image ? (
+			<img src={image} alt="Social media" width="24" height="24" />
+		) : undefined
+	}
+	{text}
 </button>
