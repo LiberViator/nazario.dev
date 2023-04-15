@@ -9,7 +9,7 @@ const { stepsList } = Astro.props;
 	id="steps"
 	x-data="{ currentStep: 0, stepCardWidth: $refs.stepCard.offsetWidth }"
 	x-on:resize.window.debounce="() => stepCardWidth = $refs.stepCard.offsetWidth"
-	class="flex w-full flex-col items-center overflow-hidden py-16">
+	class="flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
 	<div class="flex w-full flex-col items-center gap-x-8">
 		<Title text="Etapy Działania" />
 		<div
@@ -31,7 +31,7 @@ const { stepsList } = Astro.props;
 				}
 			</ul>
 		</div>
-		<div class="flex flex-row items-center gap-6">
+		<div class="flex flex-row items-center gap-4">
 			<button
 				aria-label="Previous step"
 				x-on:click="currentStep > 0 ? currentStep-- : undefined">
@@ -43,10 +43,10 @@ const { stepsList } = Astro.props;
 					class="rotate-180"
 				/>
 			</button>
-			<h5
-				class="w-12 text-center text-slate-500"
+			<span
+				class="w-12 text-center text-base/6 text-slate-500"
 				x-text=`currentStep + 1 +"${" z " + stepsList.length}"`>
-			</h5>
+			</span>
 			<button
 				aria-label="Next step"
 				x-on:click=`currentStep < ${stepsList.length - 1} ? currentStep++ : undefined`>
