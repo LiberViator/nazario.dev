@@ -9,7 +9,7 @@ const { stepsList } = Astro.props;
 	id="steps"
 	x-data="{ currentStep: 0, stepCardWidth: $refs.stepCard.offsetWidth }"
 	x-on:resize.window.debounce="() => stepCardWidth = $refs.stepCard.offsetWidth"
-	class="flex w-full flex-col items-center overflow-hidden bg-slate-800 py-12 md:py-16">
+	class="flex w-full flex-col items-center overflow-hidden py-16">
 	<div class="flex w-full flex-col items-center gap-x-8">
 		<Title text="Etapy Działania" />
 		<div

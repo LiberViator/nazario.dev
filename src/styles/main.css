@@ -13,14 +13,13 @@
 	h1 {
 		font-display: fallback;
 		@apply font-display;
-		@apply text-2xl;
-		@apply sm:text-3xl;
-		@apply leading-[125%];
+		@apply text-2xl/[3.5rem];
+		@apply sm:text-3xl/[4rem];
 	}
 
 	h2 {
-		@apply text-lg/8;
-		@apply sm:text-xl/10;
+		@apply text-lg/[2rem];
+		@apply sm:text-xl/[2.75rem];
 	}
 
 	h3 {

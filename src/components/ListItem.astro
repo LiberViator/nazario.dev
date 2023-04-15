@@ -2,7 +2,14 @@
 const { content } = Astro.props;
 ---
 
-<li class="] text-base/7">
-	<!-- <img src="/assets/bullet.svg" alt="Bullet point" width="16" height="16" /> -->
+<li class="flex gap-2 text-base/7">
+	<img
+		class="h-7"
+		src="/assets/bullet.svg"
+		alt="Bullet point"
+		width="16"
+		height="16"
+		draggable="false"
+	/>
 	{content}
 </li>
