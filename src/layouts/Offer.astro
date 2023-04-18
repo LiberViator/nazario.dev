@@ -13,7 +13,7 @@ const {} = Astro.props;
 		<Title text="Moja Oferta" />
 		<div class="flex flex-col items-center gap-8 md:flex-row">
 			<div
-				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-xl bg-slate-700">
+				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
 				<div
 					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
 					<h3>Tworzenie witryny</h3>
@@ -30,16 +30,12 @@ const {} = Astro.props;
 					/>
 					<ListItem content="Wsparcie techniczne przez 6 miesięcy" />
 				</ul>
-				<div class="flex w-full justify-center px-6 pb-6">
-					<button
-						onclick="document.getElementById('user_name').focus()"
-						class="cta_button w-full bg-yellow-300 text-neutral-900 hover:shadow-glow-yellow md:w-64">
-						Zleć projekt!
-					</button>
+				<div class="flex w-full justify-center px-6 pb-8">
+					<ActionLink text="Przejdź do formularza" goToId="user_name" />
 				</div>
 			</div>
 			<div
-				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-xl bg-slate-700">
+				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
 				<div
 					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
 					<h3>Dodatkowe usługi</h3>
@@ -55,9 +51,6 @@ const {} = Astro.props;
 						content="Wsparcie techniczne po upływie 6-miesięcznego okresu"
 					/>
 				</ul>
-				<div class="flex w-full justify-center px-6 pb-8">
-					<ActionLink text="Przejdź do formularza" goToId="user_name" />
-				</div>
 			</div>
 		</div>
 	</div>

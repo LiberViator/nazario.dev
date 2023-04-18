@@ -31,28 +31,22 @@ module.exports = {
 				},
 			},
 			backgroundImage: {
-				"hero-gradient":
-					"radial-gradient(720px at 72% 40%, rgba(51, 65, 85, 0.88) 0%, #1e293b 100%)",
 				"offer-gradient":
 					"radial-gradient(80% 512% at 64% 16%, #475569 0%, #334155 100%)",
-				"contact-gradient":
-					"radial-gradient(720px at 100% 100%, rgba(51, 65, 85, 0.5) 0%, rgba(18, 25, 40, 0) 100%)",
 				"form-gradient":
 					"linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
 				"smooth-gradient": [
-					"radial-gradient(720px at 100% 0%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
-					"radial-gradient(862px at 72% 8%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
-					"radial-gradient(640px at 0% 48%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
-					"radial-gradient(640px at 100% 64%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
-					"radial-gradient(640px at 100% 100%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(1440px at 72% 12%, theme('colors.sky.200/16%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(1440px at 16% 56%, theme('colors.sky.200/8%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(1440px at 80% 96%, theme('colors.sky.200/12%') 0%, theme('colors.slate.900/0%') 100%)",
 				],
 			},
 			dropShadow: {
 				portrait: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
 			},
 			boxShadow: {
-				"glow-yellow": "0px 0px 32px rgba(253, 224, 71, 0.16)",
-				"glow-blue": "0px 0px 32px rgba(147, 197, 253, 0.16)",
+				"glow-yellow": "0px 0px 32px theme('colors.yellow.200/16%')",
+				"glow-blue": "0px 0px 32px theme('colors.blue.400/16%')",
 				container:
 					"4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08)",
 				form: "8px 8px 16px rgba(0, 0, 0, 0.08), 16px 16px 32px rgba(0, 0, 0, 0.08)",

@@ -4,7 +4,7 @@ import NavLink from "../components/Nav.astro";
 ---
 
 <section
-	class="paddings relative flex h-[calc(100svh-32px)] max-h-[960px] min-h-[640px] w-full justify-center overflow-hidden">
+	class="paddings relative flex h-[100svh] max-h-[960px] min-h-[640px] w-full justify-center overflow-hidden">
 	<div class="grid w-full max-w-6xl grid-cols-1 gap-8 lg:grid-cols-2">
 		<div
 			class="relative col-span-1 col-start-1 row-start-1 flex h-full w-full items-end justify-center lg:justify-end">
@@ -50,7 +50,7 @@ import NavLink from "../components/Nav.astro";
             </a> -->
 					</div>
 					<button
-						class="cta_button w-64 bg-yellow-300 text-neutral-900 hover:shadow-glow-yellow"
+						class="cta_button w-64 bg-yellow-300 text-black hover:shadow-glow-yellow"
 						x-data
 						x-on:click.prevent="document.getElementById('user_name').focus()"
 						>Zleć projekt!</button
