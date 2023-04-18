@@ -39,6 +39,13 @@ module.exports = {
 					"radial-gradient(720px at 100% 100%, rgba(51, 65, 85, 0.5) 0%, rgba(18, 25, 40, 0) 100%)",
 				"form-gradient":
 					"linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
+				"smooth-gradient": [
+					"radial-gradient(720px at 100% 0%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(862px at 72% 8%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(640px at 0% 48%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(640px at 100% 64%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+					"radial-gradient(640px at 100% 100%, theme('colors.slate.700/64%') 0%, theme('colors.slate.900/0%') 100%)",
+				],
 			},
 			dropShadow: {
 				portrait: "-16px 16px 32px rgba(0, 0, 0, 0.4)",
