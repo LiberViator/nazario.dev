@@ -53,6 +53,14 @@
 		@apply text-base;
 	} */
 
+	.hero-image {
+		mask-image: linear-gradient(
+			rgba(0, 0, 0, 1) 72%,
+			rgba(0, 0, 0, 0) 100%,
+			transparent
+		);
+	}
+
 	.paddings {
 		@apply px-6;
 		@apply sm:px-8;
@@ -60,11 +68,8 @@
 	}
 
 	.border-shine::after {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+		@apply absolute;
+		@apply inset-0;
 		-webkit-mask: linear-gradient(#fff 0 0) padding-box,
 			linear-gradient(#fff 0 0);
 		-webkit-mask-composite: destination-out;
