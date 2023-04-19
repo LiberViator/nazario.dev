@@ -6,18 +6,18 @@ import NavLink from "../components/Nav.astro";
 <section
 	class="paddings relative flex h-[100svh] max-h-[960px] min-h-[640px] w-full justify-center overflow-hidden">
 	<div class="grid w-full max-w-6xl grid-cols-1 gap-8 lg:grid-cols-2">
-		<div
-			class="relative col-span-1 col-start-1 row-start-1 flex h-full w-full items-end justify-center lg:justify-end">
+		<div class="absolute inset-0 lg:relative">
 			<img
+				draggable="false"
 				src="/assets/portrait.webp"
 				alt="My portrait photo"
 				width="650"
 				height="820"
-				class="absolute h-full max-h-[840px] min-w-[1080px] object-contain object-[calc(64%+20vw)] opacity-10 drop-shadow-portrait lg:object-right-bottom lg:opacity-100"
+				class="absolute bottom-0 h-full max-h-[840px] w-auto max-w-[680px] translate-x-[calc((100vw-100%)/3+32vw)] object-cover object-right-bottom opacity-10 lg:right-0 lg:translate-x-0 lg:opacity-100"
 			/>
 		</div>
 		<div
-			class="z-[1] col-span-1 col-start-1 row-start-1 flex h-full w-full flex-col lg:col-start-2">
+			class="z-[1] col-start-1 row-start-1 flex h-full w-full flex-col lg:col-start-2">
 			<header class="flex w-full flex-row pb-4 pt-8">
 				<div class="flex flex-col">
 					<span class="mb-3 hidden text-base text-slate-500 sm:block"
