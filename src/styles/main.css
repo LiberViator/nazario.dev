@@ -53,14 +53,6 @@
 		@apply text-base;
 	} */
 
-	.hero-image {
-		mask-image: linear-gradient(
-			rgba(0, 0, 0, 1) 72%,
-			rgba(0, 0, 0, 0) 100%,
-			transparent
-		);
-	}
-
 	.paddings {
 		@apply px-6;
 		@apply sm:px-8;
@@ -86,6 +78,13 @@
 	}
 
 	@layer components {
+		.hero-image {
+			mask-image: linear-gradient(
+				rgba(0, 0, 0, 1) 72%,
+				rgba(0, 0, 0, 0) 100%,
+				transparent
+			);
+		}
 		.cta_button {
 			@apply cursor-pointer;
 			@apply h-12;

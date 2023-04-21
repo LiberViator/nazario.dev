@@ -8,15 +8,18 @@ const {} = Astro.props;
 
 <section
 	id="contact"
-	class="paddings flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
+	class="paddings flex w-full flex-col items-center overflow-hidden py-12 md:py-16"
+>
 	<div class="flex w-full max-w-6xl flex-col items-center">
 		<Title text="Moja Oferta" />
 		<div class="flex flex-col items-center gap-8 md:flex-row">
 			<div
-				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
+				class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form"
+			>
 				<div
-					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
-					<h3>Tworzenie witryny</h3>
+					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient"
+				>
+					<h3 class="text-center">Tworzenie witryny</h3>
 				</div>
 
 				<ul class="mb-8 flex flex-col gap-3 px-4 text-base/6 sm:px-8">
@@ -35,10 +38,12 @@ const {} = Astro.props;
 				</div>
 			</div>
 			<div
-				class="border-shine relative max-w-[400px] flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
+				class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form"
+			>
 				<div
-					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
-					<h3>Dodatkowe usługi</h3>
+					class="mb-8 flex h-24 items-center justify-center bg-offer-gradient"
+				>
+					<h3 class="text-center">Dodatkowe usługi</h3>
 				</div>
 				<ul class="mb-8 flex flex-col gap-3 px-4 text-base/6 sm:px-8">
 					<ListItem content="Ciemny / Jasny tryb strony" />
