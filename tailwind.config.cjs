@@ -13,7 +13,7 @@ module.exports = {
 			lg: "1.375rem",
 			xl: "2rem",
 			"2xl": "3rem",
-			"3xl": "3.5rem",
+			"3xl": "3.25rem",
 		},
 		extend: {
 			animation: {
@@ -31,10 +31,8 @@ module.exports = {
 				},
 			},
 			backgroundImage: {
-				"offer-gradient":
-					"radial-gradient(80% 512% at 64% 16%, #475569 0%, #334155 100%)",
-				"form-gradient":
-					"linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
+				"offer-gradient": "radial-gradient(80% 512% at 64% 16%, #475569 0%, #334155 100%)",
+				"form-gradient": "linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
 				"smooth-gradient": [
 					"radial-gradient(1440px at 72% 12%, theme('colors.sky.200/16%') 0%, theme('colors.slate.900/0%') 100%)",
 					"radial-gradient(1440px at 16% 56%, theme('colors.sky.200/8%') 0%, theme('colors.slate.900/0%') 100%)",
@@ -47,14 +45,10 @@ module.exports = {
 			boxShadow: {
 				"glow-yellow": "0px 0px 32px theme('colors.yellow.200/16%')",
 				"glow-blue": "0px 0px 32px theme('colors.blue.400/16%')",
-				container:
-					"4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08)",
+				container: "4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08)",
 				form: "8px 8px 16px rgba(0, 0, 0, 0.08), 16px 16px 32px rgba(0, 0, 0, 0.08)",
 			},
 		},
 	},
-	plugins: [
-		require("tailwind-scrollbar-hide"),
-		require("tailwindcss-intersect"),
-	],
+	plugins: [require("tailwind-scrollbar-hide"), require("tailwindcss-intersect")],
 };

@@ -1,6 +1,4 @@
 ---
-export const prerender = true;
-
 import "../styles/main.css";
 
 import Hero from "../layouts/Hero.astro";
@@ -32,11 +30,7 @@ const socialLinks = [
 		image: "/assets/linkedin.svg",
 	},
 ];
-const workList = [
-	{ name: "Project 1" },
-	{ name: "Project 2" },
-	{ name: "Project 3" },
-];
+const workList = [{ name: "Project 1" }, { name: "Project 2" }, { name: "Project 3" }];
 const valuesList = [
 	{
 		title: "Strony przyjazne SEO",
@@ -106,8 +100,7 @@ const questionsList = [
 	},
 	{
 		question: "Jak długo trwa proces tworzenia witryny?",
-		answer:
-			"Czas trwania projektu zależy od jego skali i złożoności. Zazwyczaj trwa od 2 do 4 tygodni.",
+		answer: "Czas trwania projektu zależy od jego skali i złożoności. Zazwyczaj trwa od 2 do 4 tygodni.",
 	},
 	{
 		question: "Jaka jest cena poprawek?",
@@ -121,10 +114,7 @@ const questionsList = [
 	<head>
 		<!-- Website -->
 		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, viewport-fit=cover"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<!-- About -->
 		<title>Nazar Popławski</title>
 		<meta
@@ -151,9 +141,6 @@ const questionsList = [
 		<Questions questionsList={questionsList} />
 		<Contact />
 		<!-- <script src="../scripts/onMouseGlow.js"></script> -->
-		<script
-			defer
-			src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
-		></script>
+		<script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
 	</body>
 </html>

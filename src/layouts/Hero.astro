@@ -17,30 +17,20 @@ import NavLink from "../components/Nav.astro";
 				class="hero-image absolute bottom-0 h-full max-h-[840px] w-auto max-w-[680px] translate-x-[calc((100vw-100%)/3+32vw)] object-cover object-right-bottom opacity-10 drop-shadow-portrait lg:right-0 lg:translate-x-0 lg:opacity-100"
 			/>
 		</div>
-		<div
-			class="z-[1] col-start-1 row-start-1 flex h-full w-full flex-col lg:col-start-2"
-		>
+		<div class="z-[1] col-start-1 row-start-1 flex h-full w-full flex-col lg:col-start-2">
 			<header class="flex w-full flex-row pb-4 pt-8">
 				<div class="flex flex-col">
-					<span class="mb-3 hidden text-base text-slate-500 sm:block"
-						>Nawiguj do</span
-					>
-					<nav class="flex flex-row gap-8 text-slate-400">
+					<span class="mb-3 hidden text-base/6 text-slate-500 sm:block">Nawiguj do</span>
+					<nav class="flex flex-row gap-8 text-base/6 text-slate-400">
 						{navLinks?.map((_item) => <NavLink link={_item} />)}
 					</nav>
 				</div>
 			</header>
 			<div class="flex h-full w-full max-w-[560px] items-center">
-				<div
-					x-data
-					x-cloak
-					class="intersect-once my-16 flex flex-col opacity-0 intersect:animate-heading"
-				>
+				<div x-data x-cloak class="intersect-once my-16 flex flex-col opacity-0 intersect:animate-heading">
 					<div class="flex max-w-md flex-col gap-x-8">
-						<h1 class="mb-4">Hej, jestem Nazar</h1>
-						<h2 class="mb-12">
-							Zaprojektuję witrynę na potrzeby Twoich klientów
-						</h2>
+						<h1 class="sm:text-3xl/[4rem] mb-4 font-display text-2xl/[3.5rem]">Hej, jestem Nazar</h1>
+						<h2 class="sm:text-xl/[2.75rem] mb-12 text-lg/[2rem]">Zaprojektuję witrynę na potrzeby Twoich klientów</h2>
 						<!-- <a href={""} class="mb-12 flex">
               <img
                 src="/arrow_play.svg"
@@ -55,26 +45,18 @@ import NavLink from "../components/Nav.astro";
 					<button
 						class="cta_button w-64 bg-yellow-300 text-black hover:shadow-glow-yellow"
 						x-data
-						x-on:click.prevent="document.getElementById('user_name').focus()"
-						>Zleć projekt!</button
+						x-on:click.prevent="document.getElementById('user_name').focus()">Zleć projekt!</button
 					>
 				</div>
 			</div>
 			<footer class="flex w-full flex-row items-end justify-end pb-8 pt-4">
 				<div class="flex flex-col justify-end">
-					<span class="mb-3 hidden text-base text-slate-500 sm:block"
-						>Znajdź mnie na</span
-					>
+					<span class="mb-3 hidden text-base/6 text-slate-500 sm:block">Znajdź mnie na</span>
 					<div class="flex shrink-0 flex-row justify-end gap-8">
 						{
 							socialLinks?.map((_item) => (
 								<a href={_item.href}>
-									<img
-										src={_item.image}
-										alt="Social media"
-										width="24"
-										height="24"
-									/>
+									<img src={_item.image} alt="Social media" width="24" height="24" />
 								</a>
 							))
 						}

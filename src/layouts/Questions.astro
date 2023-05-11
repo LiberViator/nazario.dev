@@ -6,26 +6,18 @@ import ActionLink from "../components/ActionLink.astro";
 const { questionsList } = Astro.props;
 ---
 
-<section
-	id="contact"
-	class="paddings flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
+<section id="contact" class="paddings flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
 	<div class="flex w-full max-w-6xl flex-col items-center">
 		<Title text="Pytania i Odpowiedzi" />
-		<div
-			class="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-12 lg:grid-cols-2">
-			<div
-				class="flex w-full max-w-[560px] flex-col items-center justify-center lg:items-start lg:pr-[16%]">
-				<h3 class="mb-6 text-center leading-[150%] lg:text-left">
+		<div class="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-12 lg:grid-cols-2">
+			<div class="lg:pr-[16%] flex w-full max-w-[560px] flex-col items-center justify-center lg:items-start">
+				<h3 class="mb-6 text-center text-lg/7 lg:text-left">
 					Możesz zadać mi pytanie wysyłając wiadomość przez formularz kontaktowy
 				</h3>
 				<ActionLink />
 			</div>
-			<div class="flex flex-col gap-6 sm:max-w-[560px]">
-				{
-					questionsList?.map((item) => (
-						<Accordion title={item.question} content={item.answer} />
-					))
-				}
+			<div class="sm:max-w-[560px] flex flex-col gap-6">
+				{questionsList?.map((item) => <Accordion title={item.question} content={item.answer} />)}
 			</div>
 		</div>
 	</div>

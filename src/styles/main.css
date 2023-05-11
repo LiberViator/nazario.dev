@@ -10,48 +10,11 @@
 		text-rendering: optimizeLegibility;
 	}
 
-	h1 {
-		font-display: fallback;
-		@apply font-display;
-		@apply text-2xl/[3.5rem];
-		@apply sm:text-3xl/[4rem];
-	}
-
-	h2 {
-		@apply text-lg/[2rem];
-		@apply sm:text-xl/[2.75rem];
-	}
-
-	h3 {
-		@apply text-lg/6;
-	}
-
-	h4 {
-		@apply text-base/6;
-		@apply font-semibold;
-	}
-
-	h5 {
-		@apply text-base/6;
-	}
-
-	h6 {
-		@apply text-sm/5;
-	}
-
-	p {
-		@apply text-base/8;
-	}
-
 	a {
 		@apply hover:text-rose-600;
 		@apply transition-colors;
 		@apply duration-100;
 	}
-
-	/* input {
-		@apply text-base;
-	} */
 
 	.paddings {
 		@apply px-6;
@@ -62,8 +25,7 @@
 	.border-shine::after {
 		@apply absolute;
 		@apply inset-0;
-		-webkit-mask: linear-gradient(#fff 0 0) padding-box,
-			linear-gradient(#fff 0 0);
+		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 		-webkit-mask-composite: destination-out;
 		mask-composite: exclude;
 		border: 1px solid transparent;
@@ -79,11 +41,7 @@
 
 	@layer components {
 		.hero-image {
-			mask-image: linear-gradient(
-				rgba(0, 0, 0, 1) 72%,
-				rgba(0, 0, 0, 0) 100%,
-				transparent
-			);
+			mask-image: linear-gradient(rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%, transparent);
 		}
 		.cta_button {
 			@apply cursor-pointer;

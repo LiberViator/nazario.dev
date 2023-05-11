@@ -8,19 +8,15 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 	method="POST"
 	x-data
 	x-cloak
-	class="max-md:paddings intersect-once border-shine relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form sm:max-w-[560px] md:px-8"
+	class="max-md:paddings intersect-once border-shine sm:max-w-[560px] relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form md:px-8"
 >
 	<input type="hidden" name="access_key" value={access_key} />
 
-	<span
-		class="mb-6 flex h-1 w-[min(24%,128px)] self-center rounded bg-slate-600"
-	></span>
+	<span class="mb-6 flex h-1 w-[min(24%,128px)] self-center rounded bg-slate-600"></span>
 
 	<fieldset class="flex w-full flex-wrap gap-x-4">
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_name" class="mb-3 text-base/6 text-slate-400"
-				>Imię:</label
-			>
+			<label for="user_name" class="mb-3 text-base/6 text-slate-400">Imię:</label>
 			<input
 				id="user_name"
 				name="Name"
@@ -33,9 +29,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 		</div>
 
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_number" class="mb-3 text-base/6 text-slate-400"
-				>Numer: (Opcj.)</label
-			>
+			<label for="user_number" class="mb-3 text-base/6 text-slate-400">Numer: (Opcj.)</label>
 			<input
 				id="user_number"
 				name="Mobile number"
@@ -47,8 +41,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 		</div>
 	</fieldset>
 
-	<label for="user_email" class="mb-3 text-base/6 text-slate-400">E-Mail:</label
-	>
+	<label for="user_email" class="mb-3 text-base/6 text-slate-400">E-Mail:</label>
 	<input
 		id="user_email"
 		name="Email"
@@ -58,9 +51,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 		required
 	/>
 
-	<label for="user_message" class="mb-3 text-base/6 text-slate-400"
-		>Wiadomość:</label
-	>
+	<label for="user_message" class="mb-3 text-base/6 text-slate-400">Wiadomość:</label>
 	<textarea
 		id="user_message"
 		name="Message"
@@ -69,9 +60,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 		required></textarea>
 	<input type="hidden" name="redirect" value="https://web3forms.com/success" />
 
-	<button
-		type="submit"
-		class="cta_button w-full self-end bg-yellow-300 text-black hover:shadow-glow-yellow sm:w-64"
+	<button type="submit" class="cta_button w-full self-end bg-yellow-300 text-black hover:shadow-glow-yellow sm:w-64"
 		>Wyślij wiadomość</button
 	>
 </form>
