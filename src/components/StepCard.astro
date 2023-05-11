@@ -3,7 +3,16 @@ import ActionLink from "./ActionLink.astro";
 const { id, title, desc, image, isCTA, order } = Astro.props;
 ---
 
-<li
+<li x-ref="stepCard" class="swiper-slide flex flex-col items-center sm:items-start">
+	<div class="border-shine relative mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-slate-700 shadow-container">
+		<img src={image} alt="Step icon" width="32" height="32" />
+	</div>
+	<h4 class="mb-3 text-base/7 font-semibold">{title}</h4>
+	<p class="mb-4 text-center text-base/8 text-slate-400 sm:text-left">{desc}</p>
+	{isCTA ? <ActionLink text="Przejdź do formularza" goToId="user_name" /> : undefined}
+</li>
+
+<!-- <li
 	x-ref="stepCard"
 	class="sm:w-[560px] col-span-1 flex w-[calc(100vw-48px)] snap-start snap-always flex-col items-center last:snap-end sm:items-start"
 >
@@ -13,4 +22,4 @@ const { id, title, desc, image, isCTA, order } = Astro.props;
 	<h4 class="mb-3 text-base/7 font-semibold">{title}</h4>
 	<p class="mb-4 text-center text-base/8 text-slate-400 sm:text-left">{desc}</p>
 	{isCTA ? <ActionLink text="Przejdź do formularza" goToId="user_name" /> : undefined}
-</li>
+</li> -->
