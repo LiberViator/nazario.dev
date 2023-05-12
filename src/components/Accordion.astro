@@ -7,8 +7,8 @@ const { title, content } = Astro.props;
 	class="accordion border-shine relative overflow-hidden rounded-xl bg-slate-700 shadow-container"
 >
 	<div class="flex h-auto items-center py-3 pl-6 pr-2">
-		<h5 class="mr-4 w-full text-left text-base">{title}</h5>
-		<img src="/assets/arrow_nav.svg" alt="" />
+		<h4 class="mr-4 w-full text-left text-base">{title}</h4>
+		<img src="/assets/arrow_nav.svg" alt="Open/close accordion" width="24" height="24" />
 	</div>
 	<div class="content text-slate-400">
 		<p class="h-full px-6 pb-3 pt-2 text-left text-base/relaxed">{content}</p>
