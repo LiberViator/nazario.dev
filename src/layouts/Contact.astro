@@ -10,9 +10,9 @@ const {} = Astro.props;
 		<Title text="Kontakt" />
 		<div class="grid w-full grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
 			<div
-				class="max-sm:paddings lg:pl-[16%] flex w-full flex-col items-center justify-center lg:order-1 lg:items-start lg:pb-16"
+				class="max-sm:paddings flex w-full flex-col items-center justify-center lg:order-1 lg:items-start lg:pb-16 lg:pl-[16%]"
 			>
-				<h3 class="mb-8 max-w-[360px] text-center text-lg/8 lg:text-left">Zapraszam do kontaktu ze mną za pomocą Messengera</h3>
+				<h3 class="mb-8 max-w-xs text-center text-lg lg:text-left">Zapraszam do kontaktu ze mną za pomocą Messengera</h3>
 				<button
 					onclick="window.open('https://m.me/nazar.poplawski/')"
 					class="cta_button mb-6 w-64 bg-blue-600 text-white hover:shadow-glow-blue"
@@ -23,7 +23,6 @@ const {} = Astro.props;
 				<span class="text-center text-base text-slate-400 lg:text-left"> Lub wysyłając maila za pomocą formularza</span>
 			</div>
 			<Form />
-			<!-- <img src="/assets/sign.svg" alt="" class="absolute" /> -->
 		</div>
 	</div>
 </section>

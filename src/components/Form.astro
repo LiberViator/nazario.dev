@@ -6,9 +6,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 	id="contact-form"
 	action="https://api.web3forms.com/submit"
 	method="POST"
-	x-data
-	x-cloak
-	class="max-md:paddings intersect-once border-shine sm:max-w-[560px] relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form md:px-8"
+	class="max-md:paddings intersect-once border-shine relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form sm:max-w-[560px] md:px-8"
 >
 	<input type="hidden" name="access_key" value={access_key} />
 
@@ -16,46 +14,46 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 
 	<fieldset class="flex w-full flex-wrap gap-x-4">
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_name" class="mb-3 text-base/6 text-slate-400">Imię:</label>
+			<label for="user_name" class="mb-3 text-base text-slate-400">Imię:</label>
 			<input
 				id="user_name"
 				name="Name"
-				type="name"
+				type="text"
 				minlength="3"
-				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base/6"
+				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 				placeholder="Jan"
 				required
 			/>
 		</div>
 
 		<div class="flex w-full flex-[1_1_200px] flex-col">
-			<label for="user_number" class="mb-3 text-base/6 text-slate-400">Numer: (Opcj.)</label>
+			<label for="user_number" class="mb-3 text-base text-slate-400">Numer: (Opcj.)</label>
 			<input
 				id="user_number"
 				name="Mobile number"
 				type="tel"
 				minlength="9"
-				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base/6"
+				class="mb-4 h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 				placeholder="+48 505 050 505"
 			/>
 		</div>
 	</fieldset>
 
-	<label for="user_email" class="mb-3 text-base/6 text-slate-400">E-Mail:</label>
+	<label for="user_email" class="mb-3 text-base text-slate-400">E-Mail:</label>
 	<input
 		id="user_email"
 		name="Email"
 		type="email"
-		class="mb-4 flex h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base/6"
+		class="mb-4 flex h-12 w-full rounded-xl bg-slate-600 px-6 py-3 text-base"
 		placeholder="mój@gmail.com"
 		required
 	/>
 
-	<label for="user_message" class="mb-3 text-base/6 text-slate-400">Wiadomość:</label>
+	<label for="user_message" class="mb-3 text-base text-slate-400">Wiadomość:</label>
 	<textarea
 		id="user_message"
 		name="Message"
-		class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl bg-slate-600 px-6 py-3 text-base/7 placeholder:text-slate-400"
+		class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl bg-slate-600 px-6 py-3 text-base/relaxed placeholder:text-slate-400"
 		placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie i potrzebuję strony internetowej, która zachęci nowych klientów do skorzystania z moich usług. Chcę, aby była atrakcyjna i zawierała wszystkie niezbędne informacje."
 		required></textarea>
 	<input type="hidden" name="redirect" value="https://web3forms.com/success" />

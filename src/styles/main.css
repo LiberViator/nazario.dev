@@ -42,10 +42,6 @@
 		content: "";
 	}
 
-	[x-cloak] {
-		visibility: hidden !important;
-	}
-
 	@layer components {
 		.hero-image {
 			mask-image: linear-gradient(rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%, transparent);
@@ -55,7 +51,7 @@
 			@apply h-12;
 			@apply hover:scale-105;
 			@apply rounded-xl;
-			@apply text-base/6;
+			@apply text-base;
 			@apply shadow-container;
 			@apply transition-all;
 			@apply duration-100;

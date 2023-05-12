@@ -2,9 +2,7 @@
 const { text = "Przejdź do formularza", goToId = "user_name" } = Astro.props;
 ---
 
-<a
-	class="group flex cursor-pointer items-center justify-center"
-	onclick={`document.getElementById('${goToId}').focus()`}>
+<a class="group flex cursor-pointer items-center justify-center" onclick=`document.getElementById('${goToId}').focus()`>
 	<img
 		class="mr-2 transition-transform duration-100 group-hover:translate-x-1"
 		src="/assets/arrow_next.svg"
@@ -12,27 +10,7 @@ const { text = "Przejdź do formularza", goToId = "user_name" } = Astro.props;
 		width="16"
 		height="16"
 	/>
-	<span class="text-base/6 text-yellow-200">
+	<span class="text-base text-yellow-200">
 		{text}
 	</span>
 </a>
-
-<!-- ---
-const { text = "Przejdź do formularza", goToId = "user_name" } = Astro.props;
----
-
-<script src="../scripts/goTo.js"></script>
-<a
-	class="group flex cursor-pointer items-center justify-center"
-	onclick={`${goTo(goToId)}`}>
-	<img
-		class="mr-2 transition-transform duration-100 group-hover:translate-x-1"
-		src="/assets/arrow_next.svg"
-		alt="Step icon"
-		width="16"
-		height="16"
-	/>
-	<span class="text-base/6 text-yellow-200">
-		{text}
-	</span>
-</a> -->

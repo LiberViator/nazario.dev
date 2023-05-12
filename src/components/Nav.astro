@@ -1,8 +1,7 @@
 ---
 const { link } = Astro.props;
-const scrollTo = `document.getElementById("${link.id}").scrollIntoView()`;
 ---
 
-<a href="/" x-data x-on:click.prevent={scrollTo}>
-  <h5>{link.name}</h5>
-</a>
+<button onclick=`document.getElementById('${link.id}').scrollIntoView()`>
+	<h5>{link.name}</h5>
+</button>
