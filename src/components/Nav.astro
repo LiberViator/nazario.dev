@@ -2,6 +2,9 @@
 const { link } = Astro.props;
 ---
 
-<button onclick=`document.getElementById('${link.id}').scrollIntoView()`>
+<button
+	onclick=`document.getElementById('${link.id}').scrollIntoView()`
+	class="text-base text-slate-400 transition-colors duration-100 hover:text-rose-600"
+>
 	<h5>{link.name}</h5>
 </button>
