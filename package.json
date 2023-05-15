@@ -4,11 +4,16 @@
 	"version": "1.0.0",
 	"description": "Nazar's personal website",
 	"author": "Nazar Popławski",
+	"homepage": "https://nazario.dev",
+	"main": "index.js",
 	"private": true,
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/LiberViator/nazario.dev"
+		"url": "git+https://github.com/LiberViator/nazario.dev"
+	},
+	"bugs": {
+		"url": "https://github.com/LiberViator/nazario.dev/issues"
 	},
 	"scripts": {
 		"dev": "astro dev",

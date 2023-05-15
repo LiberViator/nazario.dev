@@ -17,12 +17,6 @@
 		text-rendering: optimizeLegibility;
 	}
 
-	a {
-		@apply hover:text-rose-600;
-		@apply transition-colors;
-		@apply duration-100;
-	}
-
 	.paddings {
 		@apply px-6;
 		@apply sm:px-8;

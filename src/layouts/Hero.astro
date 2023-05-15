@@ -12,14 +12,14 @@ import NavLink from "../components/Nav.astro";
 				alt="My portrait photo"
 				width="650"
 				height="820"
-				class="hero-image absolute bottom-0 right-0 h-full max-h-[858px] w-[calc((100vw-100%)/0.2+48vw)] max-w-[680px] object-cover object-left-bottom opacity-10 drop-shadow-portrait lg:w-auto lg:opacity-100"
+				class="hero-image absolute bottom-0 h-full max-h-[840px] w-auto max-w-[680px] translate-x-[calc((100vw-100%)/3+32vw)] object-cover object-right-bottom opacity-10 drop-shadow-portrait lg:right-0 lg:translate-x-0 lg:opacity-100"
 			/>
 		</div>
 		<div class="z-[1] col-start-1 row-start-1 flex h-full w-full flex-col lg:col-start-2">
 			<header class="flex w-full flex-row pb-4 pt-8">
 				<div class="flex flex-col">
 					<span class="mb-3 hidden text-base text-slate-500 sm:block">Nawiguj do</span>
-					<nav class="flex flex-row gap-8 text-base text-slate-400">
+					<nav class="flex flex-row gap-8">
 						{navLinks?.map((_item) => <NavLink link={_item} />)}
 					</nav>
 				</div>
