@@ -1,6 +1,6 @@
 ---
 import Title from "../components/Title.astro";
-import Accordion from "../components/Accordion.astro";
+import Accordion from "../components/Accordion.svelte";
 import ActionLink from "../components/ActionLink.astro";
 
 const { questionsList } = Astro.props;
@@ -15,8 +15,6 @@ const { questionsList } = Astro.props;
 			</h3>
 			<ActionLink />
 		</div>
-		<div class="flex flex-col gap-6 sm:max-w-[560px]">
-			{questionsList?.map((item) => <Accordion title={item.question} content={item.answer} />)}
-		</div>
+		<Accordion data={questionsList} client:load />
 	</div>
 </section>

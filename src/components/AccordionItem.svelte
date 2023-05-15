@@ -1,12 +1,13 @@
----
-const { title, content } = Astro.props;
----
+<script lang="js">
+	export let title = "";
+	export let content = "";
+	export let i;
+
+	export let toggle;
+</script>
 
 <div class="accordion border-shine relative overflow-hidden rounded-xl bg-slate-700 shadow-container">
-	<button
-		class="flex h-auto w-full items-center py-3 pl-6 pr-4"
-		onclick="const accordions = document.querySelectorAll('.accordion'); accordions.forEach(acc => this.parentElement !== acc ? acc.classList.remove('accordion-active') : acc.classList.toggle('accordion-active'));"
-	>
+	<button class="flex h-auto w-full items-center py-3 pl-6 pr-4" on:click={() => toggle(i)}>
 		<span class="mr-4 w-full text-left text-base">{title}</span>
 		<img class="rotate-90" src="/assets/arrow_nav.svg" alt="Open/close accordion" width="16" height="16" />
 	</button>
