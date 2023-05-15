@@ -65,5 +65,8 @@
 		.accordion-active .content {
 			@apply max-h-96;
 		}
+		.accordion-active img {
+			@apply -rotate-90;
+		}
 	}
 }
