@@ -4,10 +4,10 @@ const { title, content } = Astro.props;
 
 <div class="accordion border-shine relative overflow-hidden rounded-xl bg-slate-700 shadow-container">
 	<button
-		class="flex h-auto w-full py-3 pl-6 pr-2"
+		class="flex h-auto w-full items-center py-3 pl-6 pr-2"
 		onclick="const accordions = document.querySelectorAll('.accordion'); accordions.forEach(acc => this.parentElement !== acc ? acc.classList.remove('accordion-active') : acc.classList.toggle('accordion-active'));"
 	>
-		<span class="mr-4 w-full text-left text-base/6">{title}</span>
+		<span class="mr-4 w-full text-left text-base">{title}</span>
 		<img src="/assets/arrow_nav.svg" alt="Open/close accordion" width="24" height="24" />
 	</button>
 	<div class="content text-slate-400">
