@@ -3,5 +3,5 @@ const { link } = Astro.props;
 ---
 
 <button onclick=`document.getElementById('${link.id}').scrollIntoView()`>
-	<h5>{link.name}</h5>
+	{link.name}
 </button>
