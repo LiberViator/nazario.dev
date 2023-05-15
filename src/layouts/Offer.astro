@@ -6,42 +6,40 @@ import ListItem from "../components/ListItem.astro";
 const {} = Astro.props;
 ---
 
-<section class="paddings flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
-	<div class="flex w-full max-w-6xl flex-col items-center">
-		<Title text="Moja Oferta" />
-		<div class="flex flex-col items-center gap-8 md:flex-row">
-			<div class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
-				<div class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
-					<h3 class="text-center text-lg">Tworzenie witryny</h3>
-				</div>
+<section class="paddings mx-auto flex w-full max-w-6xl flex-col items-center overflow-hidden py-12 md:py-16">
+	<Title text="Moja Oferta" />
+	<div class="flex flex-col items-center gap-8 md:flex-row">
+		<div class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
+			<div class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
+				<h3 class="text-center text-lg">Tworzenie witryny</h3>
+			</div>
 
-				<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
-					<ListItem content="Dostosowanie do urządzeń mobilnych" />
-					<ListItem content="Domena z certyfikatem SSL" />
-					<ListItem content="Hosting z serwerem w Polsce" />
-					<ListItem content="Dostosowany adres e-mail" />
-					<ListItem content="Szkolenia z zarządzania stroną" />
-					<ListItem content="Optymalizacja witryny pod kątem prędkości ładowania i SEO" />
-					<ListItem content="Wsparcie techniczne przez 6 miesięcy" />
-				</ul>
-				<div class="flex w-full justify-center px-6 pb-8">
-					<ActionLink text="Przejdź do formularza" goToId="user_name" />
-				</div>
+			<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
+				<ListItem content="Dostosowanie do urządzeń mobilnych" />
+				<ListItem content="Domena z certyfikatem SSL" />
+				<ListItem content="Hosting z serwerem w Polsce" />
+				<ListItem content="Dostosowany adres e-mail" />
+				<ListItem content="Szkolenia z zarządzania stroną" />
+				<ListItem content="Optymalizacja witryny pod kątem prędkości ładowania i SEO" />
+				<ListItem content="Wsparcie techniczne przez 6 miesięcy" />
+			</ul>
+			<div class="flex w-full justify-center px-6 pb-8">
+				<ActionLink text="Przejdź do formularza" goToId="user_name" />
 			</div>
-			<div class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
-				<div class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
-					<h3 class="text-center text-lg">Dodatkowe usługi</h3>
-				</div>
-				<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
-					<ListItem content="Ciemny / Jasny tryb strony" />
-					<ListItem content="Integracja z narzędziami analitycznymi" />
-					<ListItem content="Integracja z systemami płatności" />
-					<ListItem content="Wdrożenie bloga" />
-					<ListItem content="Zarządzanie treściami (CMS)" />
-					<ListItem content="Integracja z social mediami" />
-					<ListItem content="Wsparcie techniczne po upływie 6-miesięcznego okresu" />
-				</ul>
+		</div>
+		<div class="border-shine relative max-w-sm flex-1 overflow-hidden rounded-2xl bg-slate-700 shadow-form">
+			<div class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
+				<h3 class="text-center text-lg">Dodatkowe usługi</h3>
 			</div>
+			<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
+				<ListItem content="Ciemny / Jasny tryb strony" />
+				<ListItem content="Integracja z narzędziami analitycznymi" />
+				<ListItem content="Integracja z systemami płatności" />
+				<ListItem content="Wdrożenie bloga" />
+				<ListItem content="Zarządzanie treściami (CMS)" />
+				<ListItem content="Integracja z social mediami" />
+				<ListItem content="Wsparcie techniczne po upływie 6-miesięcznego okresu" />
+			</ul>
 		</div>
 	</div>
 </section>

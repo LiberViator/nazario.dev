@@ -9,6 +9,7 @@ const swiper = new Swiper(".swiper", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
+	grabCursor: true,
 	slidesPerView: 1,
 	spaceBetween: 24,
 	speed: 400,

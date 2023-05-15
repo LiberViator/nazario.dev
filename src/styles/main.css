@@ -20,7 +20,7 @@
 	.paddings {
 		@apply px-6;
 		@apply sm:px-8;
-		@apply md:px-12;
+		@apply xl:px-0;
 	}
 
 	.border-shine::after {
