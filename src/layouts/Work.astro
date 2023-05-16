@@ -5,15 +5,12 @@ import WorkCard from "../components/WorkCard.astro";
 const { workList } = Astro.props;
 ---
 
-<section
-  class="flex flex-col items-center w-full px-6 py-12 bg-white md:px-12 md:py-16"
->
-  <div class="flex flex-col items-center w-full max-w-6xl gap-x-8">
-    <Title text="Pracy" />
-    <div
-      class="grid w-full grid-cols-1 gap-12 md:gap-8 md:grid-cols-2 lg:grid-cols-3"
-    >
-      {workList?.map((_work) => <WorkCard name={_work.name} />)}
-    </div>
-  </div>
+<section id="works" class="flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
+	<Title text="Wykonane pracy" />
+	<div class="paddings worksSlider w-full gap-8 lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
+		<ul class="swiper-wrapper flex w-max">
+			{workList?.map((workData) => <WorkCard workData={workData} />)}
+		</ul>
+		<span class="worksSlider-pagination"></span>
+	</div>
 </section>

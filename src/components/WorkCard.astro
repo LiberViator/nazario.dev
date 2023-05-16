@@ -1,8 +1,21 @@
 ---
-const { name, image, href } = Astro.props;
+const { workData } = Astro.props;
 ---
 
-<div class="col-span-1 flex flex-col">
-	<div class="bg-secondary mb-6 aspect-[4/3] w-full rounded-xl"></div>
-	<h4 class="">{name}</h4>
-</div>
+<li class="swiper-slide flex w-full flex-col gap-3">
+		<div class="border-shine group relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-700">
+			<img
+				class="absolute top-0 grayscale group-hover:bottom-0 group-hover:filter-none"
+				src={workData?.image}
+				alt="Project example"
+				loading="lazy"
+				draggable="false"
+			/>
+		</div>
+	<div class="flex w-full flex-wrap gap-3">
+		{workData?.tags.map((_tag) => <span class="rounded bg-slate-700 px-2 text-sm/6">{_tag}</span>)}
+	</div>
+	<a href={workData?.url}>
+		<span class="text-base">{workData?.title}</span>
+	</a>
+</li>

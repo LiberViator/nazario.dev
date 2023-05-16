@@ -9,7 +9,7 @@
 <div class="accordion border-shine relative overflow-hidden rounded-xl bg-slate-700 shadow-container">
 	<button class="flex h-auto w-full items-center py-3 pl-6 pr-4" on:click={() => toggle(i)}>
 		<span class="mr-4 w-full text-left text-base">{title}</span>
-		<img class="rotate-90" src="/assets/arrow_nav.svg" alt="Open/close accordion" width="16" height="16" />
+		<img class="rotate-90" src="/assets/arrow_nav.svg" alt="Open/close accordion" width="16" height="16" draggable="false"/>
 	</button>
 	<div class="content text-slate-400">
 		<p class="h-full px-6 pb-3 pt-2 text-left text-base/relaxed">{content}</p>
