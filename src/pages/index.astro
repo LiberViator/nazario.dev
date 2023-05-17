@@ -14,8 +14,8 @@ const langList = [
 	{ value: "pol", name: "Polish", isDefault: false },
 ];
 const navLinks = [
-	{ name: "Etapy", id: "steps" },
-	{ name: "Zalety", id: "values" },
+	{ name: "Oferta", id: "offer" },
+	{ name: "FAQ", id: "questions" },
 	{ name: "Kontakt", id: "contact" },
 ];
 const socialLinks = [
@@ -96,17 +96,20 @@ const stepsList = [
 	},
 ];
 const questionsList = [
-	{ question: "Czy wystawiam faktury?", answer: "Tak, wystawiam faktury VAT." },
+	{ id: 0, question: "Czy wystawiam faktury?", answer: "Tak, wystawiam faktury VAT." },
 	{
+		id: 1,
 		question: "Jaka jest cena projektu?",
 		answer:
 			"Cena projektu uzależniona jest od jego skali i złożoności. Zapraszam do kontaktu, abym mógł przygotować dla Ciebie indywidualną ofertę.",
 	},
 	{
+		id: 2,
 		question: "Jak długo trwa proces tworzenia witryny?",
 		answer: "Czas trwania projektu zależy od jego skali i złożoności. Zazwyczaj trwa od 2 do 4 tygodni.",
 	},
 	{
+		id: 3,
 		question: "Jaka jest cena poprawek?",
 		answer:
 			"Poprawki są wliczone w cenę projektu. Jednakże, poprawki po upłynięciu 6-miesięcznego okresu wsparcia technicznego są płatne.",

@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--swiper-navigation-size: 44px;
-		--swiper-navigation-top-offset: 50%;
-		--swiper-navigation-sides-offset: 10px;
-		--swiper-navigation-color: var(--swiper-theme-color);
-	}
-
 	html {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -37,6 +30,15 @@
 	}
 
 	@layer components {
+		:root {
+			--swiper-theme-color: theme(colors.slate.400);
+			--swiper-pagination-bullet-border-radius: 2px;
+			--swiper-pagination-bullet-width: 24px;
+			--swiper-pagination-bullet-height: 4px;
+			--swiper-pagination-bullet-inactive-color: theme(colors.slate.700);
+			--swiper-pagination-bullet-inactive-opacity: 1;
+			--swiper-pagination-bullet-opacity: 1;
+		}
 		.hero-image {
 			mask-image: linear-gradient(rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%, transparent);
 		}
@@ -53,20 +55,6 @@
 			@apply gap-3;
 			@apply items-center;
 			@apply justify-center;
-		}
-		.accordion .content {
-			@apply max-h-0;
-			/* @apply transition-[height]; */
-			/* transition: max-height 0.2s ease-out !important; */
-			/* @apply transition-[max-height];
-			@apply duration-1000;
-			@apply ease-linear; */
-		}
-		.accordion-active .content {
-			@apply max-h-96;
-		}
-		.accordion-active img {
-			@apply -rotate-90;
 		}
 	}
 }

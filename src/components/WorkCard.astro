@@ -3,15 +3,11 @@ const { workData } = Astro.props;
 ---
 
 <li class="swiper-slide flex w-full flex-col gap-3">
-		<div class="border-shine group relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-700">
-			<img
-				class="absolute top-0 grayscale group-hover:bottom-0 group-hover:filter-none"
-				src={workData?.image}
-				alt="Project example"
-				loading="lazy"
-				draggable="false"
-			/>
+	<div class="border-shine group relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-700">
+		<div class="absolute grayscale transition-transform duration-[4000ms] ease-linear group-hover:filter-none">
+			<img class="-mb-[75%]" src={workData?.image} alt="Project example" loading="lazy" draggable="false" />
 		</div>
+	</div>
 	<div class="flex w-full flex-wrap gap-3">
 		{workData?.tags.map((_tag) => <span class="rounded bg-slate-700 px-2 text-sm/6">{_tag}</span>)}
 	</div>

@@ -1,9 +1,16 @@
 import Swiper, { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const stepsSlider = new Swiper(".stepsSlider", {
 	pagination: {
 		el: ".stepsSlider-pagination",
-		type: "fraction",
+		// type: "bullets",
+		type: "custom",
+		renderCustom: function (swiper, current, total) {
+			return current + " z " + total;
+		},
+		clickable: true,
 	},
 	navigation: {
 		nextEl: ".stepsSlider-button-next",
@@ -26,20 +33,21 @@ const worksSlider = new Swiper(".worksSlider", {
 	pagination: {
 		el: ".worksSlider-pagination",
 		type: "bullets",
+		clickable: true,
 	},
 	grabCursor: true,
 	slidesPerView: 1,
-	spaceBetween: 16,
+	spaceBetween: 24,
 	speed: 400,
 	breakpoints: {
 		640: {
 			slidesPerView: 2,
-			spaceBetween: 24,
+			spaceBetween: 32,
 		},
-		768: {
+		1024: {
 			slidesPerView: 3,
 			spaceBetween: 32,
 		},
 	},
-	modules: [Navigation, Pagination],
+	modules: [Pagination],
 });

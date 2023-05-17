@@ -7,7 +7,7 @@ const { stepsList } = Astro.props;
 
 <section id="steps" class="mx-auto flex w-full flex-col items-center overflow-hidden py-12 md:py-16">
 	<Title text="Etapy Działania" />
-	<div class="stepsSlider paddings mb-8 w-full touch-pan-x lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
+	<div class="stepsSlider paddings mb-8 w-full lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
 		<ul class="swiper-wrapper flex w-max">
 			{
 				stepsList?.map((_step) => (
@@ -18,11 +18,11 @@ const { stepsList } = Astro.props;
 	</div>
 	<div class="relative flex flex-row items-center gap-4">
 		<button aria-label="Previous step" class="stepsSlider-button-prev">
-			<img class="rotate-180" src="/assets/arrow_nav.svg" alt="Previous step" width="24" height="24" draggable="false"/>
+			<img class="rotate-180" src="/assets/arrow_nav.svg" alt="Previous step" width="24" height="24" draggable="false" />
 		</button>
 		<span class="stepsSlider-pagination w-12 text-center text-base text-slate-500"></span>
 		<button aria-label="Next step" class="stepsSlider-button-next">
-			<img src="/assets/arrow_nav.svg" alt="Next step" width="24" height="24" draggable="false"/>
+			<img src="/assets/arrow_nav.svg" alt="Next step" width="24" height="24" draggable="false" />
 		</button>
 	</div>
 </section>
