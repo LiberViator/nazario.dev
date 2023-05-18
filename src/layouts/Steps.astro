@@ -5,7 +5,7 @@ import StepCard from "../components/StepCard.astro";
 const { stepsList } = Astro.props;
 ---
 
-<section id="steps" class="mx-auto flex w-full flex-col items-center py-12 md:py-16">
+<section id="steps" class="mx-auto flex w-full flex-col items-center overflow-x-hidden py-12 md:py-16">
 	<Title text="Etapy Działania" />
 	<div class="stepsSlider paddings mb-8 w-full lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
 		<ul class="swiper-wrapper flex w-max">

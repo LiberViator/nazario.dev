@@ -47,7 +47,7 @@
 		mask-composite: exclude;
 		border: 1px solid transparent;
 		border-radius: inherit;
-		background: linear-gradient(to bottom right, theme(colors.slate.500) 0%, theme(colors.slate.700/0) 40%) border-box;
+		background: linear-gradient(to bottom right, theme(colors.slate.500) 0%, theme(colors.slate.700/0) 32%) border-box;
 		/* background: radial-gradient(
 				circle 400px at var(--mouse-x) var(--mouse-y),
 				theme(colors.slate.400) 0%,
