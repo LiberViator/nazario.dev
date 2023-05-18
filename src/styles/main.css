@@ -3,6 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		--swiper-theme-color: theme(colors.slate.400);
+		--swiper-pagination-bullet-border-radius: 2px;
+		--swiper-pagination-bullet-width: 24px;
+		--swiper-pagination-bullet-height: 4px;
+		--swiper-pagination-bullet-inactive-color: theme(colors.slate.700);
+		--swiper-pagination-bullet-inactive-opacity: 1;
+		--swiper-pagination-bullet-opacity: 1;
+
+		--mouse-x: 0;
+		--mouse-y: 0;
+	}
+	::selection {
+		@apply text-black;
+		@apply bg-yellow-300;
+		@apply from-orange-500;
+		@apply to-lime-600;
+	}
+
+	img {
+		@apply select-none;
+	}
+
 	html {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -24,21 +47,18 @@
 		mask-composite: exclude;
 		border: 1px solid transparent;
 		border-radius: inherit;
-		background: linear-gradient(135deg, #475569 0%, #33415500 40%) border-box;
+		background: linear-gradient(to bottom right, theme(colors.slate.500) 0%, theme(colors.slate.700/0) 40%) border-box;
+		/* background: radial-gradient(
+				circle 400px at var(--mouse-x) var(--mouse-y),
+				theme(colors.slate.400) 0%,
+				theme(colors.slate.700/0) 40%
+			)
+			border-box; */
 		pointer-events: none;
 		content: "";
 	}
 
 	@layer components {
-		:root {
-			--swiper-theme-color: theme(colors.slate.400);
-			--swiper-pagination-bullet-border-radius: 2px;
-			--swiper-pagination-bullet-width: 24px;
-			--swiper-pagination-bullet-height: 4px;
-			--swiper-pagination-bullet-inactive-color: theme(colors.slate.700);
-			--swiper-pagination-bullet-inactive-opacity: 1;
-			--swiper-pagination-bullet-opacity: 1;
-		}
 		.hero-image {
 			mask-image: linear-gradient(rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%, transparent);
 		}
