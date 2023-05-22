@@ -1,15 +1,17 @@
----
+<script>
 import Title from "../components/Title.svelte";
 import StepCard from "../components/StepCard.svelte";
 
-const { stepsList } = Astro.props;
----
+export let stepsList;
+</script>
 
 <section id="steps" class="mx-auto flex w-full flex-col items-center overflow-x-hidden py-12 md:py-16">
 	<Title text="Etapy Działania" />
 	<div class="stepsSlider paddings mb-8 w-full lg:px-[max(calc((100vw-1152px)/2),theme(spacing.8))]">
 		<ul class="swiper-wrapper flex w-max">
-			{stepsList?.map((_step) => <StepCard title={_step.title} desc={_step.desc} image={_step.image} isCTA={_step.isCTA} />)}
+			{#each stepsList as _step}
+			<StepCard title={_step.title} desc={_step.desc} image={_step.image} isCTA={_step.isCTA} />
+			{/each}
 		</ul>
 	</div>
 	<div class="relative flex flex-row items-center gap-4">
