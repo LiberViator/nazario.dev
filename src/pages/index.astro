@@ -141,13 +141,13 @@ const questionsList = [
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body class="overflow-x-hidden bg-smooth-gradient">
-		<Hero navLinks={navLinks} socialLinks={socialLinks} client:only />
-		<Offer client:only />
+		<Hero navLinks={navLinks} socialLinks={socialLinks} />
+		<Offer />
 		<Steps stepsList={stepsList} />
-		<Values valuesList={valuesList} client:only />
-		<!-- <Work workList={workList} client:only /> -->
+		<Values valuesList={valuesList} />
+		<!-- <Work workList={workList} /> -->
 		<Questions questionsList={questionsList} client:only />
-		<Contact client:only />
+		<Contact />
 		<!-- <script src="../scripts/intersect.js"></script> -->
 		<!-- <script src="../scripts/onMouseGlow.js"></script> -->
 		<!-- <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script> -->
