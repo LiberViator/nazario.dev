@@ -1,10 +1,8 @@
----
-import Title from "../components/Title.astro";
-import ActionLink from "../components/ActionLink.astro";
-import ListItem from "../components/ListItem.astro";
-
-const {} = Astro.props;
----
+<script>
+	import Title from "../components/Title.svelte";
+	import ActionLink from "../components/ActionLink.svelte";
+	import ListItem from "../components/ListItem.svelte";
+</script>
 
 <section id="offer" class="paddings mx-auto flex w-full max-w-6xl flex-col items-center py-12 md:py-16">
 	<Title text="Moja Oferta" />

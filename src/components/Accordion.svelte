@@ -4,7 +4,6 @@
 	export let data = [];
 
 	let active;
-
 	const toggle = (elIndex) => (elIndex === active ? (active = undefined) : (active = elIndex));
 </script>
 

@@ -1,6 +1,6 @@
----
-const { workData } = Astro.props;
----
+<script>
+	export let workData;
+</script>
 
 <li class="swiper-slide flex w-full flex-col gap-3">
 	<div class="border-shine group relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-700">
@@ -9,7 +9,9 @@ const { workData } = Astro.props;
 		</div>
 	</div>
 	<div class="flex w-full flex-wrap gap-3">
-		{workData?.tags.map((_tag) => <span class="rounded bg-slate-700 px-2 text-sm/6">{_tag}</span>)}
+		{#each workData?.tags as _tag}
+			<span class="rounded bg-slate-700 px-2 text-sm/6">{_tag}</span>
+		{/each}
 	</div>
 	<a href={workData?.url}>
 		<span class="text-base">{workData?.title}</span>

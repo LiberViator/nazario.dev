@@ -1,8 +1,9 @@
----
-const { text = "Przejdź do formularza", goToId = "user_name" } = Astro.props;
----
+<script>
+	export let text = "Przejdź do formularza",
+		goToId = "user_name";
+</script>
 
-<button class="group flex cursor-pointer items-center justify-center" onclick=`document.getElementById('${goToId}').focus()`>
+<button class="group flex cursor-pointer items-center justify-center" onclick={`document.getElementById('${goToId}').focus()`}>
 	<img
 		class="mr-2 transition-transform duration-100 group-hover:translate-x-1"
 		src="/assets/arrow_next.svg"

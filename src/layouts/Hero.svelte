@@ -1,7 +1,7 @@
----
-const { navLinks, socialLinks } = Astro.props;
-import NavLink from "../components/Nav.astro";
----
+<script>
+	import NavLink from "../components/Nav.svelte";
+	export let navLinks, socialLinks;
+</script>
 
 <section
 	id="hero"
@@ -11,7 +11,7 @@ import NavLink from "../components/Nav.astro";
 		<img
 			draggable="false"
 			src="/assets/portrait.webp"
-			alt="My portrait photo"
+			alt="Portrait"
 			width="650"
 			height="820"
 			class="hero-image absolute bottom-0 h-full max-h-[840px] w-auto max-w-[680px] translate-x-[calc((100vw-100%)/3+32vw)] object-cover object-right-bottom opacity-10 drop-shadow-portrait lg:right-0 lg:translate-x-0 lg:opacity-100"
@@ -22,7 +22,9 @@ import NavLink from "../components/Nav.astro";
 			<div class="flex flex-col">
 				<span class="mb-3 hidden text-base text-slate-500 sm:block">Nawiguj do</span>
 				<nav class="flex flex-row gap-8">
-					{navLinks?.map((_item) => <NavLink link={_item} />)}
+					{#each navLinks as _item}
+						<NavLink link={_item} />
+					{/each}
 				</nav>
 			</div>
 		</header>
@@ -52,13 +54,11 @@ import NavLink from "../components/Nav.astro";
 			<div class="flex flex-col justify-end">
 				<span class="mb-3 hidden text-base text-slate-500 sm:block">Znajdź mnie na</span>
 				<div class="flex shrink-0 flex-row justify-end gap-8">
-					{
-						socialLinks?.map((_item) => (
-							<a href={_item.href}>
-								<img src={_item.image} alt="Social media" width="24" height="24" />
-							</a>
-						))
-					}
+					{#each socialLinks as _item}
+						<a href={_item.href}>
+							<img src={_item.image} alt="Social media" width="24" height="24" />
+						</a>
+					{/each}
 				</div>
 			</div>
 		</footer>

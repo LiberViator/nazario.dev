@@ -1,10 +1,10 @@
----
-import Title from "../components/Title.astro";
+<script>
+import Title from "../components/Title.svelte";
 import Accordion from "../components/Accordion.svelte";
-import ActionLink from "../components/ActionLink.astro";
+import ActionLink from "../components/ActionLink.svelte";
 
-const { questionsList } = Astro.props;
----
+export let questionsList;
+</script>
 
 <section id="questions" class="paddings mx-auto flex w-full max-w-6xl flex-col items-center py-12 md:py-16">
 	<Title text="Pytania i Odpowiedzi" />
@@ -15,6 +15,6 @@ const { questionsList } = Astro.props;
 			</h3>
 			<ActionLink />
 		</div>
-		<Accordion data={questionsList} client:load />
+		<Accordion data={questionsList} />
 	</div>
 </section>

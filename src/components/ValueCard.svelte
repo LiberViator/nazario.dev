@@ -1,6 +1,6 @@
----
-const { title, desc, image } = Astro.props;
----
+<script>
+	export let title, desc, image;
+</script>
 
 <div class="flex max-w-[264px] flex-col items-center">
 	<div class="border-shine relative mb-6 h-32 w-32 rounded-xl bg-slate-700 shadow-container">

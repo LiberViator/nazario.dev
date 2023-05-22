@@ -1,9 +1,7 @@
----
-import Title from "../components/Title.astro";
-import Form from "../components/Form.astro";
-
-const {} = Astro.props;
----
+<script>
+	import Title from "../components/Title.svelte";
+	import Form from "../components/Form.svelte";
+</script>
 
 <section id="contact" class="sm:paddings mx-auto flex w-full max-w-6xl flex-col items-center overflow-hidden pt-12 md:pt-16">
 	<Title text="Kontakt" />

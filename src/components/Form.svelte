@@ -1,6 +1,6 @@
----
-const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
----
+<script>
+	const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
+</script>
 
 <form
 	id="contact-form"
@@ -10,7 +10,7 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 >
 	<input type="hidden" name="access_key" value={access_key} />
 
-	<span class="mb-6 flex h-1 w-[min(24%,128px)] self-center rounded bg-slate-600"></span>
+	<span class="mb-6 flex h-1 w-[min(24%,128px)] self-center rounded bg-slate-600" />
 
 	<fieldset class="flex w-full flex-wrap gap-x-4">
 		<div class="flex w-full flex-[1_1_200px] flex-col">
@@ -55,7 +55,8 @@ const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
 		name="Message"
 		class="mb-8 flex min-h-[128px] w-full resize-none rounded-xl border border-transparent bg-slate-600 px-6 py-3 text-base/relaxed transition-colors scrollbar-hide placeholder:text-slate-400 hover:border-slate-500"
 		placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie i potrzebuję strony internetowej, która zachęci nowych klientów do skorzystania z moich usług. Chcę, aby była atrakcyjna i zawierała wszystkie niezbędne informacje."
-		required></textarea>
+		required
+	/>
 	<input type="hidden" name="redirect" value="https://web3forms.com/success" />
 
 	<button type="submit" class="cta_button w-full self-end bg-yellow-300 text-black hover:shadow-glow-yellow sm:w-64"

@@ -1,10 +1,9 @@
 <script lang="js">
-	export let title = "";
-	export let content = "";
-
-	export let index;
-	export let isOpen;
-	export let toggle;
+	export let title = "",
+		content = "",
+		index,
+		isOpen,
+		toggle;
 </script>
 
 <div class="border-shine relative overflow-hidden rounded-xl bg-slate-700 shadow-container">
