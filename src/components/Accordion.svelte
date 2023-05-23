@@ -1,5 +1,5 @@
-<script lang="js">
-	import AccordionItem from "./AccordionItem.svelte";
+<script>
+	import AccordionItem from "@components/AccordionItem.svelte";
 
 	export let data = [];
 

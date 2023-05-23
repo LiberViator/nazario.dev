@@ -1,6 +1,6 @@
 <script>
-	import Title from "../components/Title.svelte";
-	import WorkCard from "../components/WorkCard.svelte";
+	import Title from "@components/Title.svelte";
+	import WorkCard from "@components/WorkCard.svelte";
 
 	export let workList;
 </script>

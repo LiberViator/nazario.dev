@@ -1,6 +1,6 @@
 <script>
-	import Title from "../components/Title.svelte";
-	import ValueCard from "../components/ValueCard.svelte";
+	import Title from "@components/Title.svelte";
+	import ValueCard from "@components/ValueCard.svelte";
 
 	export let valuesList;
 </script>

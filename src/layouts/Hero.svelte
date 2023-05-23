@@ -1,5 +1,5 @@
 <script>
-	import NavLink from "../components/Nav.svelte";
+	import NavLink from "@components/Nav.svelte";
 	export let navLinks, socialLinks;
 </script>
 

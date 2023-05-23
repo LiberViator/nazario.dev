@@ -1,7 +1,7 @@
 <script>
-	import Title from "../components/Title.svelte";
-	import ActionLink from "../components/ActionLink.svelte";
-	import ListItem from "../components/ListItem.svelte";
+	import Title from "@components/Title.svelte";
+	import ActionLink from "@components/ActionLink.svelte";
+	import ListItem from "@components/ListItem.svelte";
 </script>
 
 <section id="offer" class="paddings mx-auto flex w-full max-w-6xl flex-col items-center py-12 md:py-16">

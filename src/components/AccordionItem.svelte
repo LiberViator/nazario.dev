@@ -1,4 +1,4 @@
-<script lang="js">
+<script>
 	export let title = "",
 		content = "",
 		index,

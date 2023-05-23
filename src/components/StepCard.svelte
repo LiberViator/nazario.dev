@@ -1,5 +1,5 @@
 <script>
-	import ActionLink from "./ActionLink.svelte";
+	import ActionLink from "@components/ActionLink.svelte";
 	export let title, desc, image, isCTA;
 </script>
 

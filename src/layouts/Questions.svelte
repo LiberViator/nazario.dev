@@ -1,9 +1,9 @@
 <script>
-import Title from "../components/Title.svelte";
-import Accordion from "../components/Accordion.svelte";
-import ActionLink from "../components/ActionLink.svelte";
+	import Title from "@components/Title.svelte";
+	import Accordion from "@components/Accordion.svelte";
+	import ActionLink from "@components/ActionLink.svelte";
 
-export let questionsList;
+	export let questionsList;
 </script>
 
 <section id="questions" class="paddings mx-auto flex w-full max-w-6xl flex-col items-center py-12 md:py-16">
