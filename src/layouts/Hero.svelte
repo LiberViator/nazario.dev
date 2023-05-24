@@ -1,12 +1,19 @@
 <script>
+	import { onMount } from "svelte";
 	import NavLink from "@components/Nav.svelte";
 	export let navLinks, socialLinks;
+
+	let height;
+
+	onMount(() => {
+		height = window.innerHeight;
+	});
 </script>
 
 <section
 	id="hero"
-	class="paddings relative mx-auto grid max-h-[960px] h-[100svh] min-h-[640px] w-full max-w-6xl grid-cols-1 justify-center gap-8 lg:grid-cols-2"
-	style={`height:${window.innerHeight}px`}
+	class="paddings relative mx-auto grid h-[100svh] max-h-[960px] min-h-[640px] w-full max-w-6xl grid-cols-1 justify-center gap-8 lg:grid-cols-2"
+	style={`height:${height}px`}
 >
 	<div class="absolute inset-0 overflow-hidden lg:relative lg:overflow-visible">
 		<img
