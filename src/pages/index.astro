@@ -141,7 +141,7 @@ const questionsList = [
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body class="min-h-full overflow-x-hidden bg-smooth-gradient">
-		<Hero navLinks={navLinks} socialLinks={socialLinks} client:idle />
+		<Hero navLinks={navLinks} socialLinks={socialLinks} client:only />
 		<Offer />
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
