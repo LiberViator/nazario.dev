@@ -141,12 +141,12 @@ const questionsList = [
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body class="overflow-x-hidden bg-smooth-gradient">
-		<Hero navLinks={navLinks} socialLinks={socialLinks} />
+		<Hero navLinks={navLinks} socialLinks={socialLinks} client:only="svelte" />
 		<Offer />
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
 		<!-- <Work workList={workList} /> -->
-		<Questions questionsList={questionsList} client:only />
+		<Questions questionsList={questionsList} client:only="svelte" />
 		<Contact />
 		<!-- <script src="../scripts/intersect.js"></script> -->
 		<!-- <script src="../scripts/onMouseGlow.js"></script> -->
