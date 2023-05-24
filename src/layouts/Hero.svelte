@@ -5,7 +5,7 @@
 	let height;
 </script>
 
-<svelte:window bind:innerHeight={height}/>
+<svelte:window on:load={height = window.innerHeight}/>
 
 <section
 	id="hero"
