@@ -2,12 +2,14 @@
 	import NavLink from "@components/Nav.svelte";
 	export let navLinks, socialLinks;
 
-	const height = window.innerHeight;
+	let height;
 </script>
+
+<svelte:window bind:innerHeight={height}/>
 
 <section
 	id="hero"
-	class="paddings relative mx-auto grid max-h-[960px] min-h-[640px] w-full max-w-6xl grid-cols-1 justify-center gap-8 lg:grid-cols-2"
+	class="paddings relative mx-auto grid max-h-[960px] h-[100svh] min-h-[640px] w-full max-w-6xl grid-cols-1 justify-center gap-8 lg:grid-cols-2"
 	style={`height:${height}px`}
 >
 	<div class="absolute inset-0 overflow-hidden lg:relative lg:overflow-visible">
