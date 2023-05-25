@@ -30,6 +30,22 @@ const socialLinks = [
 		image: "/assets/linkedin.svg",
 	},
 ];
+const offerList = [
+	{ type: "main", content: "Dostosowanie do urządzeń mobilnych" },
+	{ type: "main", content: "Domena z certyfikatem SSL" },
+	{ type: "main", content: "Hosting z serwerem w Polsce" },
+	{ type: "main", content: "Dostosowany adres e-mail" },
+	{ type: "main", content: "Szkolenia z zarządzania stroną" },
+	{ type: "main", content: "Optymalizacja witryny pod kątem prędkości ładowania i SEO" },
+	{ type: "main", content: "Wsparcie techniczne przez 6 miesięcy" },
+	{ type: "side", content: "Ciemny / Jasny tryb strony" },
+	{ type: "side", content: "Integracja z narzędziami analitycznymi" },
+	{ type: "side", content: "Integracja z systemami płatności" },
+	{ type: "side", content: "Wdrożenie bloga" },
+	{ type: "side", content: "Zarządzanie treściami (CMS)" },
+	{ type: "side", content: "Integracja z social mediami" },
+	{ type: "side", content: "Wsparcie techniczne po upływie 6-miesięcznego okresu" },
+];
 const workList = [
 	{ title: "Abruzzo ", tags: ["Re-design", "Web Design"], image: "/assets/works/abruzzo.png", url: "https://abruzzo.com.pl/" },
 	{ title: "Project 2", tags: ["Coding", "Web Design"], image: "/assets/works/abruzzo.png", url: "" },
@@ -142,7 +158,7 @@ const questionsList = [
 	</head>
 	<body class="min-h-full overflow-x-hidden bg-smooth-gradient">
 		<Hero navLinks={navLinks} socialLinks={socialLinks} client:idle />
-		<Offer />
+		<Offer offerList={offerList} />
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
 		<!-- <Work workList={workList} /> -->

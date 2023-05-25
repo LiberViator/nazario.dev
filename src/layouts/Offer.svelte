@@ -2,6 +2,10 @@
 	import Title from "@components/Title.svelte";
 	import ActionLink from "@components/ActionLink.svelte";
 	import ListItem from "@components/ListItem.svelte";
+
+	export let offerList = [];
+	const mainOffer = offerList.filter(offer => offer.type === "main");
+	const sideOffer = offerList.filter(offer => offer.type === "side");
 </script>
 
 <section id="offer" class="paddings mx-auto flex w-full max-w-6xl flex-col items-center py-12 md:py-16">
@@ -11,15 +15,10 @@
 			<div class="mb-8 flex h-24 items-center justify-center bg-offer-gradient">
 				<h3 class="text-center text-lg">Tworzenie witryny</h3>
 			</div>
-
 			<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
-				<ListItem content="Dostosowanie do urządzeń mobilnych" />
-				<ListItem content="Domena z certyfikatem SSL" />
-				<ListItem content="Hosting z serwerem w Polsce" />
-				<ListItem content="Dostosowany adres e-mail" />
-				<ListItem content="Szkolenia z zarządzania stroną" />
-				<ListItem content="Optymalizacja witryny pod kątem prędkości ładowania i SEO" />
-				<ListItem content="Wsparcie techniczne przez 6 miesięcy" />
+				{#each mainOffer as offer}
+						<ListItem content={offer.content} />
+				{/each}
 			</ul>
 			<div class="flex w-full justify-center px-6 pb-8">
 				<ActionLink text="Przejdź do formularza" goToId="user_name" />
@@ -30,13 +29,11 @@
 				<h3 class="text-center text-lg">Dodatkowe usługi</h3>
 			</div>
 			<ul class="mb-8 flex flex-col gap-3 px-4 text-base sm:px-8">
-				<ListItem content="Ciemny / Jasny tryb strony" />
-				<ListItem content="Integracja z narzędziami analitycznymi" />
-				<ListItem content="Integracja z systemami płatności" />
-				<ListItem content="Wdrożenie bloga" />
-				<ListItem content="Zarządzanie treściami (CMS)" />
-				<ListItem content="Integracja z social mediami" />
-				<ListItem content="Wsparcie techniczne po upływie 6-miesięcznego okresu" />
+				{#each sideOffer as offer}
+					{#if offer.type === "side"}
+						<ListItem content={offer.content} />
+					{/if}
+				{/each}
 			</ul>
 		</div>
 	</div>
