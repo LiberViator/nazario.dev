@@ -1,15 +1,10 @@
-<svelte:head>
-	<!-- Captcha -->
-	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-		function onSubmit(token) {
-			document.getElementById("contact-form").submit();
-		}
-	</script>
-</svelte:head>
+<script>
+	const access_key = "f21c06ae-2d7f-43b7-be97-c94e2cd54eb8";
+</script>
+
 <form
 	id="contact-form"
-	action="mailto:recipient@example.com"
+	action="https://api.web3forms.com/submit"
 	method="POST"
 	class="max-md:paddings intersect-once border-shine relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form sm:max-w-[560px] md:px-8"
 >
@@ -56,12 +51,8 @@
 		placeholder="Cześć, Nazar! Mam swój barbershop w Krakowie i potrzebuję strony internetowej, która zachęci nowych klientów do skorzystania z moich usług. Chcę, aby była atrakcyjna i zawierała wszystkie niezbędne informacje."
 		required
 	/>
-	<button
-		type="submit"
-		data-sitekey="6LdLKlomAAAAACoPQt1N0kcGeWvx_XW2iR78IftF"
-		data-callback="onSubmit"
-		data-action="submit"
-		class="g-recaptcha cta_button w-full self-end bg-yellow-300 text-black hover:shadow-glow-yellow sm:w-64"
+	<input type="hidden" name="redirect" value="https://web3forms.com/success" />
+	<button type="submit" class="cta_button w-full self-end bg-yellow-300 text-black hover:shadow-glow-yellow sm:w-64"
 		>Wyślij wiadomość</button
 	>
 </form>
