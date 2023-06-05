@@ -1,12 +1,25 @@
 <script>
 	import { onMount } from "svelte";
+	import { fade, fly } from "svelte/transition";
 	import NavLink from "@components/Nav.svelte";
 	export let navLinks, socialLinks;
+
+	let headlines = ["szybką", "interaktywną", "estetyczną", "profesjonalną"];
+	let currentHeadline = 0;
+	let longestHeadline = headlines.sort(function (a, b) {
+		return b.length - a.length;
+	})[0].length;
 
 	let height;
 
 	onMount(() => {
 		height = window.innerHeight;
+
+		setInterval(change, 3000);
+		function change() {
+			currentHeadline++;
+			currentHeadline >= headlines.length && (currentHeadline = 0);
+		}
 	});
 </script>
 
@@ -40,7 +53,15 @@
 			<div class="intersect-once my-16 flex flex-col opacity-0 intersect:animate-heading">
 				<div class="flex max-w-lg flex-col gap-x-8">
 					<h1 class="mb-4 font-display text-2xl/tight sm:text-3xl/tight">Hej, jestem Nazar</h1>
-					<h2 class="mb-12 text-lg sm:text-xl">Zaprojektuję witrynę na potrzeby Twoich klientów</h2>
+					<h2 class="mb-12 text-lg sm:text-xl">
+						Zaprojektuję
+						<span class="">
+							{#key currentHeadline}
+								<span class="inline-block" in:fly={{ duration: 800, y: -24 }}>{headlines[currentHeadline]}</span>
+							{/key}
+						</span>
+						witrynę na potrzeby Twoich klientów
+					</h2>
 					<!-- <a href={""} class="mb-12 flex">
               <img
                 src="/arrow_play.svg"
