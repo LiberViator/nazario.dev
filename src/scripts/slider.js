@@ -21,7 +21,7 @@ const stepsSlider = new Swiper(".stepsSlider", {
 	spaceBetween: 24,
 	speed: 400,
 	breakpoints: {
-		768: {
+		1024: {
 			slidesPerView: 2,
 			spaceBetween: 32,
 		},
