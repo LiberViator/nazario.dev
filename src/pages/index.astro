@@ -18,6 +18,7 @@ const navLinks = [
 	{ name: "FAQ", id: "questions" },
 	{ name: "Kontakt", id: "contact" },
 ];
+const headlines = ["szybką", "interaktywną", "estetyczną", "profesjonalną"];
 const socialLinks = [
 	{
 		name: "Facebook",
@@ -157,13 +158,13 @@ const questionsList = [
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body class="min-h-full overflow-x-hidden bg-smooth-gradient">
-		<Hero navLinks={navLinks} socialLinks={socialLinks} client:idle />
+		<Hero navLinks={navLinks} headlines={headlines} socialLinks={socialLinks} client:idle />
 		<Offer offerList={offerList} />
 		<Steps stepsList={stepsList} />
 		<Values valuesList={valuesList} />
 		<!-- <Work workList={workList} /> -->
 		<Questions questionsList={questionsList} client:visible />
-		<Contact client:idle/>
+		<Contact client:idle />
 		<!-- <script src="../scripts/intersect.js"></script> -->
 		<!-- <script src="../scripts/onMouseGlow.js"></script> -->
 		<!-- <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script> -->

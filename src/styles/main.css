@@ -17,9 +17,7 @@
 	}
 	::selection {
 		@apply text-black;
-		@apply bg-yellow-300;
-		@apply from-orange-500;
-		@apply to-lime-600;
+		@apply bg-blue-200;
 	}
 
 	img {

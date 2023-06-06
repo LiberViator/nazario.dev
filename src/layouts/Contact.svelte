@@ -9,15 +9,15 @@
 		<div
 			class="max-sm:paddings flex w-full flex-col items-center justify-center lg:order-1 lg:items-start lg:pb-16 lg:pl-[16%]"
 		>
-			<h3 class="mb-8 max-w-xs text-center text-lg lg:text-left">Zapraszam do kontaktu ze mną za pomocą Messengera</h3>
-			<button
+			<h3 class="mb-6 max-w-sm text-center text-lg lg:text-left">Zapraszam do kontaktu ze mną za pomocą formularza</h3>
+			<!-- <button
 				onclick="window.open('https://m.me/nazar.poplawski/')"
-				class="cta_button mb-6 w-64 bg-blue-600 text-white hover:shadow-glow-blue"
+				class="cta_button mb-6 w-64 bg-blue-200 text-black hover:shadow-glow-blue"
 			>
 				<img src="/assets/messenger.svg" alt="Social media" width="24" height="24" />
 				Messenger
-			</button>
-			<span class="text-center text-base text-slate-400 lg:text-left">Lub wysyłając maila za pomocą formularza</span>
+			</button> -->
+			<p class="text-center text-base/relaxed text-slate-400 lg:text-left">Lub wysyłając wiadomość na <a href="https://m.me/nazar.poplawski/" target="_blank" class="text-blue-200"><span class="mr-1">Messenger</span><img src="/assets/new_window.svg" alt="Messenger" class="inline-block"></a></p>
 		</div>
 		<Form />
 	</div>
