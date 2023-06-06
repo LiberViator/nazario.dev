@@ -29,25 +29,25 @@ const stepsSlider = new Swiper(".stepsSlider", {
 	modules: [Navigation, Pagination],
 });
 
-const worksSlider = new Swiper(".worksSlider", {
-	pagination: {
-		el: ".worksSlider-pagination",
-		type: "bullets",
-		clickable: true,
-	},
-	grabCursor: true,
-	slidesPerView: 1,
-	spaceBetween: 24,
-	speed: 400,
-	breakpoints: {
-		640: {
-			slidesPerView: 2,
-			spaceBetween: 32,
-		},
-		1024: {
-			slidesPerView: 3,
-			spaceBetween: 32,
-		},
-	},
-	modules: [Pagination],
-});
+// const worksSlider = new Swiper(".worksSlider", {
+// 	pagination: {
+// 		el: ".worksSlider-pagination",
+// 		type: "bullets",
+// 		clickable: true,
+// 	},
+// 	grabCursor: true,
+// 	slidesPerView: 1,
+// 	spaceBetween: 24,
+// 	speed: 400,
+// 	breakpoints: {
+// 		640: {
+// 			slidesPerView: 2,
+// 			spaceBetween: 32,
+// 		},
+// 		1024: {
+// 			slidesPerView: 3,
+// 			spaceBetween: 32,
+// 		},
+// 	},
+// 	modules: [Pagination],
+// });
