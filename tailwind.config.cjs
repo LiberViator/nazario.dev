@@ -19,6 +19,7 @@ module.exports = {
 			animation: {
 				heading: "0.6s 0.2s 1 normal ease-out headingAnim forwards",
 				form: "0.6s 0.2s 1 normal ease-out formAnim forwards",
+				shine: "shine 2s linear infinite",
 			},
 			keyframes: {
 				headingAnim: {

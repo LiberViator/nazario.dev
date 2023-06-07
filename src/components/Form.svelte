@@ -6,7 +6,7 @@
 	id="contact-form"
 	action="https://api.web3forms.com/submit"
 	method="POST"
-	class="max-md:paddings intersect-once border-shine relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form sm:max-w-[560px] md:px-8"
+	class="max-md:paddings intersect-once border-shine after:border-b-0 relative mx-auto flex w-full flex-col rounded-t-2xl bg-slate-700 bg-form-gradient pb-16 pt-3 opacity-5 shadow-form intersect:animate-form sm:max-w-[560px] md:px-8"
 >
 	<input type="hidden" name="access_key" value={access_key} />
 	<span class="mb-6 flex h-1 w-[min(24%,128px)] self-center rounded bg-slate-600" />

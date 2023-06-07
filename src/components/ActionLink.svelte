@@ -12,7 +12,7 @@
 		height="16"
 		draggable="false"
 	/>
-	<span class="text-base text-yellow-200">
+	<span class="text-base text-yellow-200 group-hover:text-shine">
 		{text}
 	</span>
 </button>
