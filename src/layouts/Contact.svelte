@@ -17,10 +17,11 @@
 				<img src="/assets/messenger.svg" alt="Social media" width="24" height="24" />
 				Messenger
 			</button> -->
-			<p class="text-center text-base/relaxed text-slate-400 lg:text-left">Lub wysyłając wiadomość na
-				<a href="https://m.me/nazar.poplawski/" target="_blank" class="text-blue-200">
-					<span class="mr-1">Messenger</span>
-					<img src="/assets/new_window.svg" alt="Messenger" class="inline-block" width="16" height="16">
+			<p class="text-center text-base/loose text-slate-400 lg:text-left max-w-sm">
+				Lub wysyłając wiadomość na
+				<a href="https://m.me/nazar.poplawski/" target="_blank" class="text-blue-200 inline-flex items-center">
+					<img src="/assets/messenger.svg" alt="Social media" width="24" height="24" class="mr-2" />
+					<span>Messenger</span>
 				</a>
 			</p>
 		</div>
