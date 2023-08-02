@@ -5,7 +5,7 @@
 
 <button class="group flex cursor-pointer items-center justify-center" onclick={`document.getElementById('${goToId}').focus()`}>
 	<img
-		class="mr-2 transition-transform duration-100 group-hover:translate-x-1"
+		class="mr-2 transition-transform duration-100 group-hover:duration-150 group-hover:translate-x-1"
 		src="/assets/arrow_next.svg"
 		alt="Action link"
 		width="16"
