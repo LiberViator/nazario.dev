@@ -51,7 +51,7 @@
 		<div class="flex h-full w-full max-w-[560px] items-center">
 			<div class="intersect-once my-16 flex flex-col opacity-0 intersect:animate-heading">
 				<div class="flex max-w-lg flex-col mb-12">
-					<h1 class="mb-6 font-display text-2xl/tight sm:text-3xl/tight">Hej, jestem Nazar</h1>
+					<h1 class="mb-6 font-display text-2xl/snug sm:text-3xl/snug">Hej, jestem Nazar</h1>
 					<h2 class="text-lg sm:text-xl">
 						Zaprojektuję <span class="text-blue-200">profesjonalną</span> witrynę, abyś osiągał jeszcze więcej
 					</h2>

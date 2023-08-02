@@ -45,7 +45,7 @@
 		-webkit-mask-size: 400%;
 		mask-size: 400%;
 		animation: shine 0.4s linear;
-		transition: mask-position 1.5s ease, -webkit-mask-position 1.5s ease;
+		transition: mask-position 1s ease, -webkit-mask-position 1s ease;
 	}
 
 	/* .text-shine {
