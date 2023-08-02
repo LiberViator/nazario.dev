@@ -35,7 +35,7 @@ module.exports = {
 				"offer-gradient": "radial-gradient(80% 512% at 64% 16%, #475569 0%, #334155 100%)",
 				"form-gradient": "linear-gradient(theme('colors.slate.700') 80%, #1e293b 100%)",
 				"smooth-gradient": [
-					"url('/assets/bg_light.png')",
+					"url('/assets/bg_light.webp')",
 					"radial-gradient(1440px at 72% 12%, theme('colors.sky.200/16%') 0%, theme('colors.slate.900/0%') 100%)",
 					"radial-gradient(1440px at 16% 56%, theme('colors.sky.200/8%') 0%, theme('colors.slate.900/0%') 100%)",
 					"radial-gradient(1440px at 80% 96%, theme('colors.sky.200/12%') 0%, theme('colors.slate.900/0%') 100%)",
